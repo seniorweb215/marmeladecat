@@ -1,0 +1,21 @@
+{% if section.settings.outlane_features_section_id %} 
+<div data-section-id="{{section.id}}" data-section-type="outlane-features"> 
+<div class="ol-features" data-section="{{section.settings.outlane_features_section_id}}"></div> 
+</div> 
+{% endif %} 
+{% schema %}{ "name": "Features Section","settings": [
+{"type": "header", "content": "General Settings"},
+{"type": "select",
+"id": "outlane_features_section_id",
+"label": "Select features section",
+"default": "0",
+"options": [
+{"value": "0","label": "Select section"}, 
+{"value": "5e0090b84ff4030023a527eb",
+"label": "Features Section"
+}
+] } ],
+"presets": [ { "name": "Features Section", "category": "Outlane"} ]}
+{% endschema %} 
+{% stylesheet %}{% endstylesheet %} 
+{% javascript %}{% endjavascript %}

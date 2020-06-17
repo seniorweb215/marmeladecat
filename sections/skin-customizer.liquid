@@ -1,0 +1,129 @@
+{% include 'spurit_po2_section_snippet', product: null, products: collections[section.settings.skin-collection].products %}
+<script>// <![CDATA[
+function showiPhones() {
+    hideCat();
+    var x = document.getElementById("iphones");
+      x.style.display="block";
+  }
+function showMacBooks() {
+    var x = document.getElementById("macbooks");
+      x.style.display = "block";
+      hideCat();
+  }
+function showiPads() {
+    var x = document.getElementById("ipads");
+      x.style.display = "block";
+      hideCat();
+  }
+function showAirPods() {
+    var x = document.getElementById("airpods");
+      x.style.display = "block";
+      hideCat();
+  }
+function showAppleWatch() {
+    var x = document.getElementById("applewatch");
+      x.style.display = "block";
+      hideCat();
+  }
+function hideCat(){
+    var x = document.getElementById("chooseCat");
+    x.style.display = "none";
+    var y = document.getElementById("goBack");
+    y.style.display = "block";
+}
+function showAll(){
+    var y = document.getElementById("choose-main");
+    y.style.display = "block";
+    var x = document.getElementById("choose-button-main");
+    x.style.display = "none";
+}
+function showCat(){
+    document.getElementById("chooseCat").style.display = "block";
+    document.getElementById("iphones").style.display = "none";
+    document.getElementById("goBack").style.display = "none"
+    document.getElementById("macbooks").style.display="none";
+    document.getElementById("ipads").style.display="none";
+    document.getElementById("airpods").style.display="none";
+    document.getElementById("applewatch").style.display="none";
+}
+// ]]></script>
+<style>
+#box-choose button {
+    background-color: #FFFFFF;
+    border: none;
+    color: black;
+    height: 25%;
+    width: 40%;
+    text-align: center;
+    display: inline-block;
+    box-shadow: -5px 0px 30px rgba(232, 232, 232, 1);
+    margin: 10px 10px;
+}
+#iphones, #macbooks, #ipads, #airpods, #applewatch, #goBack, #choose-main {
+    display: none;
+}
+#chooseCat img{
+    max-width: 20%;
+    height: auto;
+}
+#goBack button {
+  width: 200px;
+}
+#choose-button-main button{
+    width: 100%;
+    background-color: black;
+    margin: auto;
+}
+#box-choose {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    align-content: center;
+    flex-direction: column;
+}
+</style>
+{% for product in collections %}
+	{{ product.products }}
+{% endfor %}
+<div id="choose-button-main"><button onclick="showAll()"> Konfiguriere deinen Skin </button></div>
+<div id="box-choose">
+<div id="choose-main">
+<div id="choose-variant">
+  <h2>Wähle zuerst deinen Style...</h2>
+<div id="chooseCat">
+<h2>Wähle zuerst die Gerätekategorie...</h2>
+<button onclick="showiPhones()">iPhone</button> <button onclick="showMacBooks()">MacBook</button> <button onclick="showiPads()">iPad</button> <button onclick="showAirPods()">AirPods</button> <button onclick="showAppleWatch()">AppleWatch</button></div>
+<div id="goBack"><button onclick="showCat()"> Zurück zur Auswahl</button>
+<h2>...Wähle jetzt dein Modell</h2>
+</div>
+  <div id="iphones">
+  {% for iphones in all_products[iphone] %}
+    {{ iphones }}
+    {% endfor %}
+  </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Skin konfigurator",
+    "settings": [
+  {
+   "type":      "collection",
+   "id":        "skin-collection",
+   "label":     "Wähle deine Kollektion",
+   "info":      "Text"
+}
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

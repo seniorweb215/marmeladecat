@@ -1,0 +1,84 @@
+<script>
+  function showiPhones() {
+    hideCat();
+    var x = document.getElementById("iphones");
+      x.style.display="block";
+  }
+function showMacBooks() {
+    var x = document.getElementById("macbooks");
+      x.style.display = "block";
+      hideCat();
+  }
+function showiPads() {
+    var x = document.getElementById("ipads");
+      x.style.display = "block";
+      hideCat();
+  }
+function showAirPods() {
+    var x = document.getElementById("airpods");
+      x.style.display = "block";
+      hideCat();
+  }
+function showAppleWatch() {
+    var x = document.getElementById("applewatch");
+      x.style.display = "block";
+      hideCat();
+  }
+function hideCat(){
+    var x = document.getElementById("chooseCat");
+    x.style.display = "none";
+    var y = document.getElementById("goBack");
+    y.style.display = "block";
+}
+function showCat(){
+    document.getElementById("chooseCat").style.display = "block";
+    document.getElementById("iphones").style.display = "none";
+    document.getElementById("goBack").style.display = "none"
+    document.getElementById("macbooks").style.display="none";
+    document.getElementById("ipads").style.display="none";
+    document.getElementById("airpods").style.display="none";
+    document.getElementById("applewatch").style.display="none";
+}
+  
+  
+</script>
+<style>
+  #box-choose button {
+    background-color: #FFFFFF;
+    border: none;
+    color: black;
+    height: 25%;
+    width: 40%;
+    text-align: center;
+    display: inline-block;
+    box-shadow: -5px 0px 30px rgba(232, 232, 232, 1);
+    margin: 10px 10px;
+}
+#iphones, #macbooks, #ipads, #airpods, #applewatch, #goBack {
+    display: none;
+}
+#chooseCat img{
+    height: auto;
+}
+#goBack button {
+  width: 200px;
+}
+#box-choose {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    align-content: center;
+    flex-direction: column;
+}
+</style>
+<a name="pagecontent" id="pagecontent"></a>
+
+<div class="sixteen columns page clearfix">
+  <div class="feature_divider"></div>
+
+  <div>
+    {% include 'page-multi-column', content: page.content %}
+  </div>
+</div>

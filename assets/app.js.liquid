@@ -555,22 +555,27 @@ $(function() {
 
   // Crosssell cart by Yaroslav Zaika
   {% if settings.cart_action == 'crosssell' %}
-    $(document).on('click', '.cart_container .dropdown_link', function() {
-      $cartContainer = $(".crosssell-cart_content");
-      $(".crosssell-form-content").css("margin-left", "-100%");
-      $(".crosssell-cart_content > h2").html("Warenkorb");
-      showCartPopup($cartContainer);
-      $.ajax({
-        type: 'GET',
-        url: '/cart.js',
-        cache: false,
-        dataType: 'json',
-        success: function(cart) {
-          setTimeout(function() {
-            toggleProgressBar(cart);
-          }, 500)
-        }
-      });
+    $(document).on('click', '.cart_container .dropdown_link', function(e) {
+      console.log("clicked");
+      if($(window).width() <= 798) {
+        $cartContainer = $(".crosssell-cart_content");
+        $(".crosssell-form-content").css("margin-left", "-100%");
+        $(".crosssell-cart_content > h2").html("Warenkorb");
+        showCartPopup($cartContainer);
+        $.ajax({
+          type: 'GET',
+          url: '/cart.js',
+          cache: false,
+          dataType: 'json',
+          success: function(cart) {
+            setTimeout(function() {
+              toggleProgressBar(cart);
+            }, 500)
+          }
+        });
+      } else {
+        e.preventDefault();
+      }
     })
 
     $('.cart_container .dropdown_link').hover(function() {

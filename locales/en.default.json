@@ -1386,6 +1386,7 @@
       "designer_credits_html": "<a href=\"https:\/\/outofthesandbox.com\/\" target=\"_blank\" title=\"Turbo Shopify Theme by Out of the Sandbox\">Designed by Out of the Sandbox<\/a>."
     },
     "crosssell": {
+      "free_shipping": "Free shipping",
       "button1": "+ YES, ADD TO CART",
       "button2": "NO THANKS, VIEW CART",
       "button3": "SKINS FOR OTHER DEVICES"

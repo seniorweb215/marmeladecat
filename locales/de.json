@@ -403,8 +403,9 @@
       "designer_credits_html": "<a href=\"http:\/\/outofthesandbox.com\/\" target=\"_blank\" title=\"Turbo Shopify Theme by Out of the Sandbox\">Gestaltet von Out of the Sandbox<\/a>."
     },
     "crosssell": {
+      "free_shipping": "Kostenloser Versand",
       "button1": "+ Ja, In den Warenkorb",
-      "button2": "Nein, Warenkorb anzeigen",
+      "button2": "Nein danke, Warenkorb anzeigen",
       "button3": "Skins für andere Geräte"
     },
     "social_sharing": {

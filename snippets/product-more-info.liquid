@@ -1,0 +1,32 @@
+{% unless product.title == "iPhone 12 mini Skins" or product.title == "iPhone 12 Pro Skins" or product.title == "iPhone 12 Skins" or product.title == "iPhone 12 Pro Max Skins" %}
+<div class="icon-block">
+    <img src="{{ 'product-icon-1.svg' | asset_url }}" alt="block-icon" />
+    <span class="block-text"><ly-as-109666>Blitzschneller Versand (1-3 Werktage)</ly-as-109666></span>
+</div>
+{% endunless %}
+<div class="icon-block">
+    <img src="{{ 'product-icon-2.svg' | asset_url }}" alt="block-icon" />
+    <span class="block-text"><ly-as-109667>30 Tage Rückgaberecht</ly-as-109667></span>
+</div>
+<div class="icon-block icon-button">
+    <img src="{{ 'product-icon-3.svg' | asset_url }}" alt="block-icon" />
+  <span class="block-text"><ly-as-109668>Saubere Installation garantiert</ly-as-109668><span style="color: grey;"><ly-as-109669>(mehr erfahren)</ly-as-109669></span></span>
+</div>
+
+<style>
+    .product-more-info .icon-block {
+        padding: 2px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .product-more-info .icon-block img {
+        width: 30px;
+        height: 25px;
+    }
+
+    .product-more-info .icon-block span {
+        line-height: 1.9;
+        padding-left: 10px;
+    }
+</style>

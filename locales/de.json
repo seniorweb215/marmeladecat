@@ -171,6 +171,18 @@
         "other": "Artikel verblieben"
       }
     },
+    "skin_description": {
+      "deinem": "deinem",
+      "deinen": "deinen",
+      "deiner": "deiner",
+      "deines": "deines",
+      "ist_das": "Ist das",
+      "ist_die": "Ist die",
+      "sind_die": "Sind die",
+      "fingerabdruecke": "Schluss mit unschönen Fingerabdrücken auf der Rückseite deines",
+      "wiederverkauf1": "Steigert den Wiederverkaufswert des",
+      "wiederverkauf2": "Steigert den Wiederverkaufswert der"
+    },
     "notify_form": {
       "email": "Geben Sie Ihre E-Mail-Adresse ein...",
       "send": "Senden",
@@ -387,7 +399,7 @@
       "cart": "Warenkorb",
       "edit_cart": "Warenkorb bearbeiten",
       "go_to_cart": "Zum warenkorb",
-      "checkout": "Kasse",
+      "checkout": "Zur Kasse gehen",
       "cart_note": "Hinweis",
       "continue_shopping": "Weiter einkaufen",
       "empty_cart": "Ihr Warenkorb ist leer",
@@ -406,7 +418,9 @@
       "free_shipping": "Kostenloser Versand",
       "button1": "+ Ja, In den Warenkorb",
       "button2": "Nein danke, Warenkorb anzeigen",
-      "button3": "Skins für andere Geräte"
+      "button3": "Skins für andere Geräte",
+      "unlocked": "unlocked",
+      "unlocked_in": "freigeschaltet in "
     },
     "social_sharing": {
       "title": "Teilen",
@@ -442,11 +456,12 @@
     "delivery_note_alternative": "Vorbestellung: wird am 24.04 verschickt",
     "applewatch_warnung": "ACHTUNG: Um Missverständnissen vorzubeugen, es handelt sich hierbei um die Folierung. Die auf dem Bild abgebildete AppleWatch gehört selbstverständlich nicht zum Lieferumfang ;)",
     "airpods_warnung": "ACHTUNG: Um Missverständnissen vorzubeugen, es handelt sich hierbei um die Folierung. Die auf dem Bild abgebildeten AirPods gehören selbstverständlich nicht zum Lieferumfang ;)",
-    "tax_note_html": "Inkl. MwSt. & <br><a href=\"\/pages\/versand-und-zahlung\">Versand<\/a>.",
+    "tax_note_html": "Inkl. MwSt. zzgl. <br><a href=\"\/pages\/versand-und-zahlung\">Versand<\/a>.",
     "tax_note_gift": "Inkl. MwSt., Versand von Gutscheinen per Mail",
     "delivery_note_gift": "Lieferzeit: 1-12 Stunden",
     "cart_note": "Preis inkl. MwSt. Versand innerhalb von Deutschland €1,90, Versandkosten für andere Länder werden im Bestellablauf ausgewiesen.",
-    "tax_note": "Inkl. MwSt. zzgl. Versand"
+    "tax_note": "Inkl. MwSt. zzgl. Versand",
+    "tos_note": " Es gelten die <a href='https:\/\/marmeladecat.com\/pages\/it-recht-agb'>AGBs<\/a> und <a href='https:\/\/marmeladecat.com\/pages\/it-recht-datenschutz'>Datenschutzbestimmungen<\/a>."
   },
   "shopify": {
     "checkout": {

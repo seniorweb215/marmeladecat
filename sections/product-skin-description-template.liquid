@@ -9,19 +9,6 @@
   <div class="sixteen columns">
     {% if collection.previous_product or collection.next_product or section.settings.product_breadcrumb %}
       <div class="clearfix breadcrumb-collection">
-        {% if collection.previous_product or collection.next_product %}
-         {% comment %} <div class="nav_arrows breadcrumb_text">
-            {% if collection.previous_product %}
-              <a href="{{ collection.previous_product }}" title="{{ 'products.general.previous_product_html' | t }}" class="breadcrumb_link"><span class="icon-left-arrow"> {{ 'products.general.previous_product_html' | t }}</span></a>
-            {% endif %}
-            {% if collection.previous_product and collection.next_product %}<span class="breadcrumb-divider"> | </span>{% endif %}
-
-            {% if collection.next_product %}
-              <a href="{{collection.next_product}}" title="{{ 'products.general.next_product_html' | t }}" class="breadcrumb_link">{{ 'products.general.next_product_html' | t }} <span class="icon-right-arrow"></span></a>
-            {% endif %}
-          </div> {% endcomment %}
-        {% endif %}
-
         {% if section.settings.product_breadcrumb %}
           {% include 'product__breadcrumb' %}
         {% endif %}
@@ -30,175 +17,225 @@
   </div>
 
   {% comment %}Check to see if sidebar should be enabled{% endcomment %}
-  {% if section.blocks.size > 0 %}
-    {% assign sidebar = true %}
-  {% else %}
-    {% assign sidebar = false %}
-  {% endif %}
 
   <div class="product clearfix">
-    {% if sidebar %}
-      {% include 'sidebar' %}
-      <div class="twelve columns medium-down--one-whole sidebar--{{ sidebar }}">
-    {% else %}
-      <div class="sixteen columns">
-    {% endif %}
+    <div class="sixteen columns">
+      <div class="product-{{ product.id }}" data-free-text="{{ settings.free_price_text }}">
+        <div class="section product_section clearfix js-product_section {% if section.settings.product_images_position == 'right' %}align_right--images{% endif %}" data-rv-handle="{{ product.handle }}">
+          <div class="nine columns medium-down--one-whole {% if section.settings.product_images_position == 'left' %}alpha{% else %}omega{% endif %}">
+            {% include 'product-images' %}
+          </div>
 
-    <div  class="product-{{ product.id }}"
-          data-free-text="{{ settings.free_price_text }}"
-          >
-      <div class="section product_section clearfix js-product_section {% if section.settings.product_images_position == 'right' %}align_right--images{% endif %}" data-rv-handle="{{ product.handle }}">
+          <div class="seven columns medium-down--one-whole  {% if section.settings.product_images_position == 'left' %}omega{% else %}alpha{% endif %}">
 
-        <div class="nine columns medium-down--one-whole {% if section.settings.product_images_position == 'left' %}alpha{% else %}omega{% endif %}">
-          {% include 'product-images' %}
-        </div>
+            {% assign collection_handles = product.collections | map: 'handle' %}
+            {% assign variant = product.selected_or_first_available_variant %}
 
-        <div class="seven columns medium-down--one-whole  {% if section.settings.product_images_position == 'left' %}omega{% else %}alpha{% endif %}">
-
-          {% assign collection_handles = product.collections | map: 'handle' %}
-          {% assign variant = product.selected_or_first_available_variant %}
-
-          {% if product.available %}
-            {% if settings.sale_banner_enabled and product.compare_at_price_max > product.price %}
-              <div class="sale_banner_product">{{ 'collections.general.sale' | t }}</div>
-            {% endif %}
-          {% endif %}
-          {% if collection_handles contains 'new' %}
-            <div class="new_banner_product">{{ 'collections.general.new' | t }}</div>
-          {% endif %}
-          {% if collection_handles contains 'pre-order' %}
-            <div class="preorder_banner_product">{{ 'collections.general.pre_order' | t }}</div>
-          {% endif %}
-
-          {% if section.settings.display_vendor %}
-            <p class="vendor">
-              <span class="vendor">{{ product.vendor | link_to_vendor }}</span>
-            </p>
-          {% endif %}
-
-          {% if variant.sku != blank and section.settings.display_sku %}
-            <p class="sku">
-              <span>{{ variant.sku }}</span>
-            </p>
-          {% endif %}
-          <h1 class="product_name">{{ product.title }}</h1>
-          <svg height="10" width="10">
- 		  <circle cx="5" cy="5" r="4"  fill="#32CD32" />
-		  </svg>
-          <span class="delivery-note">{{ 'deutschland.delivery_note' | t }}</span>
-          {% if section.settings.enable_shopify_product_badges and settings.enable_shopify_review_comments %}
-            <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
-          {% endif %}
-          <div class="feature_divider"></div>
-
-          {% assign product_tags = product.tags | join: ' ' %}
-          {% if product_tags contains 'meta-size-chart-' %}
-            {% for tag in product.tags %}
-              {% if tag contains 'meta-size-chart-' %}
-                <a href="javascript:;" class="size_chart" data-fancybox data-src="#size-chart{{product.id}}" data-type="inline" data-no-instant>{{ 'products.product.size_chart' | t }} <span class="icon-right-arrow"></span></a>
-                {% include 'popup-size-chart', product_id: product.id %}
+            {% if product.available %}
+              {% if settings.sale_banner_enabled and product.compare_at_price_max > product.price %}
+                <div class="sale_banner_product">{{ 'collections.general.sale' | t }}</div>
               {% endif %}
-            {% endfor %}
-          {% elsif settings.size_chart != blank %}
-            <a href="javascript:;" class="size_chart" data-fancybox data-src="#size-chart{{product.id}}" data-type="inline" data-no-instant>{{ 'products.product.size_chart' | t }} <span class="icon-right-arrow"></span></a>
-          {% endif %}
+            {% endif %}
+            {% if collection_handles contains 'new' %}
+              <div class="new_banner_product">{{ 'collections.general.new' | t }}</div>
+            {% endif %}
+            {% if collection_handles contains 'pre-order' %}
+              <div class="preorder_banner_product">{{ 'collections.general.pre_order' | t }}</div>
+            {% endif %}
+
+            {% if section.settings.display_vendor %}
+              <p class="vendor">
+                <span class="vendor">{{ product.vendor | link_to_vendor }}</span>
+              </p>
+            {% endif %}
+
+            {% if variant.sku != blank and section.settings.display_sku %}
+              <p class="sku">
+                <span>{{ variant.sku }}</span>
+              </p>
+            {% endif %}
+            <h1 class="product_name">{{ product.title }}</h1>
+            <div class="price_content">
+              <span class="sold_out">{% if variant.available == false %}{{ 'products.product.sold_out' | t }}{% endif %}</span>
+              <span content="{{ variant.price | money_without_currency | remove: "," }}" class="{% if variant.compare_at_price > variant.price %}sale{% endif %}">
+                <span class="current_price {% if product.available == false %}hidden{% endif %}">
+                  {% if variant.price > 0 %}
+                    <span class="money">{{ variant.price | money }}</span>
+                  {% else %}
+                    {{ settings.free_price_text }}
+                  {% endif %}
+                </span>
+              </span>
+            </div>
+            
+            {% if section.settings.enable_shopify_product_badges and settings.enable_shopify_review_comments %}
+              <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+            {% endif %}
+            {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false, product: product %}
+            <div class="feature_divider"></div>
+
+            {% assign product_tags = product.tags | join: ' ' %}
+            {% if product_tags contains 'meta-size-chart-' %}
+              {% for tag in product.tags %}
+                {% if tag contains 'meta-size-chart-' %}
+                  <a href="javascript:;" class="size_chart" data-fancybox data-src="#size-chart{{product.id}}" data-type="inline" data-no-instant>{{ 'products.product.size_chart' | t }} <span class="icon-right-arrow"></span></a>
+                  {% include 'popup-size-chart', product_id: product.id %}
+                {% endif %}
+              {% endfor %}
+            {% elsif settings.size_chart != blank %}
+              <a href="javascript:;" class="size_chart" data-fancybox data-src="#size-chart{{product.id}}" data-type="inline" data-no-instant>{{ 'products.product.size_chart' | t }} <span class="icon-right-arrow"></span></a>
+            {% endif %}
 
 
 
-          {% unless collection_handles contains 'coming-soon' %}
-            {% include 'product-form' with 'product' %}
-          {% endunless %}
+            {% unless collection_handles contains 'coming-soon' %}
+              {% assign sortColors = section.settings.color_sort %}
+              {% assign variantColors = section.settings.variant_color_value %}
+              {% include 'product-form' with 'product' %}
+            {% endunless %}
 
-          {% if section.settings.review_position == "next_to_gallery" %}
+            {% if section.settings.review_position == "next_to_gallery" %}
+              <div class="shopify-reviews reviewsVisibility--{{settings.enable_shopify_review_comments}}">
+                <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
+              </div>
+            {% endif %}
+
+            {% if section.settings.display_collections or section.settings.display_tags or section.settings.display_type %}
+              <div class="product_links">
+                {% if section.settings.display_collections %}
+                  <p>
+                    <span class="label">{{ 'products.product.collections' | t }}:</span>
+                    <span>
+                    {% for col in product.collections %}
+                      <a href="{{ col.url }}" title="{{ col.title }}">{{ col.title }}</a>{% unless forloop.last %},{% endunless %}
+                    {% endfor %}
+                    </span>
+                  </p>
+                {% endif %}
+
+                {% if section.settings.display_type %}
+                  <p>
+                    <span class="label">{{ 'products.product.product_types' | t }}:</span>
+                    <span>{{ product.type | link_to_type }}</span>
+                  </p>
+                {% endif %}
+
+                {% if section.settings.display_tags %}
+                  <p>
+                  {% for tag in product.tags %}
+                    {% if forloop.first %}
+                      <span class="label">{{ 'products.product.tags' | t }}:</span>
+                    {% endif %}
+
+                    {% unless tag contains 'meta-' %}
+                      <span>
+                        <a href="/collections/{% if collection %}{{ collection.handle }}{% else %}all{% endif %}/{{ tag | handle }}" title="{{ 'products.product.products_tagged' | t: tag: tag }}">{{ tag }}</a>{% unless forloop.last %},{% endunless %}
+                        </span>
+                    {% endunless %}
+                  {% endfor %}
+                  </p>
+                {% endif %}
+              </div>
+            {% endif %}
+
+            <div class="meta">
+              {% if section.settings.display_social_buttons %}
+                {% include "social-buttons" with "product" %}
+              {% endif %}
+            </div>
+            {% if product.title == "iPhone 12 Skins" or product.title == "iPhone 12 Pro Skins" %}
+            <p>Wird nicht sofort geliefert. Wenn du heute bestellst, wird dein Skin zwischen dem 27.10 und dem 30.10 geliefert werden. </p>
+            {% endif %}
+            {% if product.title == "iPhone 12 mini Skins" or product.title == "iPhone 12 Pro Max Skins" %}
+            <p>Wird nicht sofort geliefert. Wenn du heute bestellst, wird dein Skin zwischen dem 17.11 und dem 20.11 geliefert werden. </p>
+            {% endif %}
+            <div class="product-more-info">
+              {% include 'product-more-info' %}
+            </div>
+          </div>
+          <div class="product-accordion-list">
+            <div class="column one-whole"> 
+             
+              {% for block in section.blocks %}
+                {% if block.type == 'accordion_content' and collection_handles contains block.settings.collection_handle %}
+                    {% assign product_title = product.title | replace: "Skins", "" %}
+                    <div class="accordion-item">
+                      <h6><ly-as-87203>Beschreibung</ly-as-87203><span class="right icon-down-arrow"></span></h6>
+                      <div class="toggle_content" style="display: none;">
+                        <p>{{ product.description }}</p>
+                        <p></p>
+                        <p><ly-as-109588>Features:</ly-as-109588></p>
+                        <p>
+                          {{ block.settings.features_content | replace: "[product_name]", product_title}}
+                        </p>
+                      </div>
+              </div>
+              <div class="accordion-item">
+                      <h6><ly-as-87204>Installation</ly-as-87204><span class="right icon-down-arrow"></span></h6>
+                      <div class="toggle_content" style="display: none;">
+                        {% if block.settings.video_url %}
+                          <iframe src="{{ block.settings.video_url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                        {% endif %}
+                        {% if block.settings.video_content %}
+                          <p>{{block.settings.video_content | replace: "[product_name]", product_title}}</p>
+                        {% endif %}
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h6><ly-as-87205>Häufig gestellte Fragen</ly-as-87205><span class="right icon-down-arrow"></span></h6>
+                      <div class="toggle_content" style="display: none;">
+                        <p>
+                          {{ block.settings.faq_content | replace: "[product_name]", product_title}}
+                        </p>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h6><ly-as-87470>Lieferumfang</ly-as-87470><span class="right icon-down-arrow"></span></h6>
+                      <div class="toggle_content" style="display: none;">
+                        {% if block.settings.whats_image %}
+                          <div class="whats-image">
+                            <img src="{{ block.settings.whats_image | img_url: 'master' }}" alt="What's in the box">
+                          </div>
+                        {% endif %}
+                        {% if block.settings.whats_content %}
+                          <p>
+                            {{ block.settings.whats_content | replace: "[product_name]", product_title}}
+                          </p>
+                        {% endif %}
+                      </div>
+                    </div>
+                {% endif %}
+                {% if block.type == 'shipping_info' %}
+                  <div class="accordion-item">
+                    <h6><ly-as-87207>Versand</ly-as-87207><span class="right icon-down-arrow"></span></h6>
+                    <div class="toggle_content" style="display: none;">
+                      <p>
+                        {{ block.settings.content }}
+                      </p>
+                    </div>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+            <div class="sixteen columns">
+              
+            </div>
+          </div>
+
+          {% if section.settings.review_position == "below_gallery" %}
             <div class="shopify-reviews reviewsVisibility--{{settings.enable_shopify_review_comments}}">
               <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
             </div>
           {% endif %}
-
-          {% if section.settings.display_collections or section.settings.display_tags or section.settings.display_type %}
-            <div class="product_links">
-              {% if section.settings.display_collections %}
-                <p>
-                  <span class="label">{{ 'products.product.collections' | t }}:</span>
-                  <span>
-                   {% for col in product.collections %}
-                     <a href="{{ col.url }}" title="{{ col.title }}">{{ col.title }}</a>{% unless forloop.last %},{% endunless %}
-                   {% endfor %}
-                  </span>
-                </p>
-              {% endif %}
-
-              {% if section.settings.display_type %}
-                <p>
-                  <span class="label">{{ 'products.product.product_types' | t }}:</span>
-                  <span>{{ product.type | link_to_type }}</span>
-                </p>
-              {% endif %}
-
-              {% if section.settings.display_tags %}
-                <p>
-                 {% for tag in product.tags %}
-                   {% if forloop.first %}
-                     <span class="label">{{ 'products.product.tags' | t }}:</span>
-                   {% endif %}
-
-                   {% unless tag contains 'meta-' %}
-                     <span>
-                       <a href="/collections/{% if collection %}{{ collection.handle }}{% else %}all{% endif %}/{{ tag | handle }}" title="{{ 'products.product.products_tagged' | t: tag: tag }}">{{ tag }}</a>{% unless forloop.last %},{% endunless %}
-                       </span>
-                   {% endunless %}
-                 {% endfor %}
-                </p>
-              {% endif %}
-            </div>
-          {% endif %}
-
-          <div class="meta">
-            {% if section.settings.display_social_buttons %}
-              {% include "social-buttons" with "product" %}
-            {% endif %}
-          </div>
-        </div>
-
-        <div class="sixteen columns">
-          <div class="description">
-            {{ product.description }}
-          </div>
-        </div>
-        <div class="sixteen columns">
-          {% include "skin-description" %}
         </div>
       </div>
-
-      {% if section.settings.review_position == "below_gallery" %}
-        <div class="shopify-reviews reviewsVisibility--{{settings.enable_shopify_review_comments}}">
-          <div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
-        </div>
-      {% endif %}
-    </div>
-
-    {% if sidebar %}
-
-            {% if section.settings.display_recently_viewed %}
-              {% include 'include-recently-viewed' %}
-            {% endif %}
-            <div data-product-recommendations-container></div>
-          </div>
-        </div>
-      </div>
-
-    {% else %}
-
-          </div>
-        </div>
-      </div>
-
       {% if section.settings.display_recently_viewed %}
         {% include 'include-recently-viewed' %}
       {% endif %}
       <div data-product-recommendations-container></div>
-    {% endif %}
-
+    </div>
+  </div>
+</div>
 <script>
   var productTags = [];
   var crosssellProducts = [];
@@ -482,6 +519,20 @@
       "id": "toggle",
       "label": "Toggle sidebar content",
       "default": false
+    },
+    {
+      "type": "header",
+      "content": "Color config"
+    },
+    {
+      "type": "textarea",
+      "id": "color_sort",
+      "label": "Color Sort"
+    },
+    {
+      "type": "textarea",
+      "id": "variant_color_value",
+      "label": "Variant Color Group"
     }
   ],
   "blocks": [
@@ -570,6 +621,71 @@
       "type": "filter_by_vendor",
       "name": "Vendor list",
       "limit": 1
+    },
+    {
+      "type": "accordion_content",
+      "name": "Accordion Content",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection_handle",
+          "label": "Collection"
+        },
+        {
+          "type": "header",
+          "content": "Faq"
+        },
+        {
+          "type": "richtext",
+          "id": "faq_content",
+          "label": "Content"
+        },
+		 {
+          "type": "richtext",
+          "id": "features_content",
+          "label": "Content"
+        },
+        {
+          "type": "header",
+          "content": "Embed Video"
+        },
+        {
+          "type": "text",
+          "id": "video_url",
+          "label": "Video URL",
+          "info": "https://youtube.com/example"
+        },
+        {
+          "type": "richtext",
+          "id": "video_content",
+          "label": "Content"
+        },
+        {
+          "type": "header",
+          "content": "What's in the box"
+        },
+        {
+          "type": "image_picker",
+          "id": "whats_image",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "whats_content",
+          "label": "Content"
+        }
+      ]
+    },
+    {
+      "type": "shipping_info",
+      "name": "Shipping Info",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content"
+        }
+      ]
     }
   ],
   "default": {

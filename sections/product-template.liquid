@@ -84,7 +84,7 @@
           {% endif %}
           <h1 class="product_name">{{ product.title }}</h1>
 <span class="stamped-product-reviews-badge stamped-main-badge" data-id="{{product.id}}" data-product-title="{{product.title}}" data-product-type="{{product.type}}" style="display: block;"></span>
-          {% render 'junip-product-summary', product: product %}
+
           {% if section.settings.enable_shopify_product_badges and settings.enable_shopify_review_comments %}
             <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
           {% endif %}

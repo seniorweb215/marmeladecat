@@ -1,0 +1,180 @@
+<section class="entdecken-image-blocks" data-section-id="{{ section.id }}">
+    <div class="banner-image">
+        <img src="{{section.settings.background_image | img_url : '1600x1200'}}" alt="banner-image">
+    </div>
+    <div class="container image-blocks">
+        <h1 class="section-title">{{ section.settings.section_title }}</h1>
+        <p class="section-description">{{ section.settings.section_description }}</p>
+        <div class="blocks">
+            {% for block in section.blocks %}
+            <div class="image-block">
+                <img src="{{ block.settings.image_url | img_url }}" alt="block-image" />
+                <span class="block-text">{{ block.settings.label_text }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<style>
+    [data-section-id="{{ section.id }}"] {
+        background-color: {{ section.settings.background_color }};
+    }
+
+    [data-section-id="{{ section.id }}"] .banner-image {
+        padding: 0;
+        position: relative;
+        {% if section.settings.hide_banner == true %}
+        display: none;
+        {% endif %}
+    }
+
+    [data-section-id="{{ section.id }}"] .banner-image img {
+        width: 100%;
+        display: list-item;
+    }
+
+    [data-section-id="{{ section.id }}"] .image-blocks {
+        max-width: 600px;
+    }
+
+    {% if section.settings.show_images == true %}
+        .section-description {
+            display: none;
+        }
+    {% else %}
+        .image-blocks .blocks {
+            display: none !important;
+        }
+    {% endif %}
+
+    @media(max-width: 991px) {
+        section[data-section-id="{{ section.id }}"] .banner-image::after {
+            content: "";
+            width: 100%;
+            height: 20vw;
+            background-color: {{ section.settings.background_color }};
+            display: inline;
+            position: absolute;
+            transform: skewY(-11deg);
+            bottom: -10vw;
+        }
+    }
+
+    @media(min-width: 992px) {
+        [data-section-id="{{ section.id }}"] .banner-image img {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 3px solid white;
+        }
+
+        section[data-section-id="{{ section.id }}"] .banner-image::after {
+            transform: skewY(-5deg);
+        }
+    }
+
+    
+
+    [data-section-id="{{ section.id }}"] .section-title {
+        font-weight: 900;
+        letter-spacing: normal;
+    }
+
+    section[data-section-id="{{ section.id }}"] .image-blocks::after {
+        content: "";
+        width: 100%;
+        height: 20vw;
+        background-color: {{ section.settings.background_color }};
+        display: inline;
+        position: absolute;
+        transform: skewY(-11deg);
+        bottom: -10vw;
+        z-index: -1;
+    }
+
+    [data-section-id="{{ section.id }}"] .blocks {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    [data-section-id="{{ section.id }}"] .blocks .image-block {
+        text-align: center;
+        background-color: white;
+        color: black;
+        max-width: calc(20% - 10px);
+    }
+
+    [data-section-id="{{ section.id }}"] .blocks .image-block img {
+        width: 100%;
+        display: block;
+        border: 2px solid white;
+        border-bottom: none;
+    }
+
+    [data-section-id="{{ section.id }}"] .blocks .image-block span {
+        font-size: 11px;
+        line-height: 1;
+        padding: 5px;
+        display: block;
+    }
+</style>
+
+{% schema %}
+{
+    "name": "Image Blocks",
+    "max_blocks": 5,
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "background_image",
+            "label": "Background Image"
+        },
+        {
+            "type": "checkbox",
+            "id": "hide_banner",
+            "label": "Hide Banner Image",
+            "default": false
+        },
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background Color"
+        },
+        {
+            "type": "text",
+            "id": "section_title",
+            "label": "Section Title",
+            "default": "Entdecke die Marmelade Cat Black Line."
+        },
+        {
+            "type": "textarea",
+            "id": "section_description",
+            "label": "Section Content"
+        },
+        {
+            "type": "checkbox",
+            "id": "show_images",
+            "label": "Show Image Blocks",
+            "default": true
+        }
+    ],
+    "blocks": [
+        {
+            "type": "text-image",
+            "name": "text-image-block",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image_url",
+                    "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "label_text",
+                    "label": "Label"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

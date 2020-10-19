@@ -1,0 +1,131 @@
+<section class="entdecken-footer" data-section-id="{{ section.id }}">
+    <div class="container">
+        <h4 class="section-title">{{section.settings.section_title}}</h4>
+        <span class="section-content">{{section.settings.section_content}}</span>
+        <!-- <div class="klaviyo-form-UcmYg4"></div> -->
+        <div class="subscribe klaviyo-form-UcmYg4">
+            <form id="email_signup" action="https://manage.kmail-lists.com/subscriptions/subscribe?a=KVruX5&g=LJdWXV" method="POST">
+                <!-- <input type="hidden" name="g" value="LJdWXV">
+                <input type="email" value="" name="email" id="k_id_email" placeholder="Deine E-Mail" />
+                <button type="submit">{{section.settings.button_label}}</button> -->
+            </form>
+            <script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script> 
+            <!-- <input type="text" class="subscribe-email" placeholder="Deine E-Mail" />
+            <button class="subscribe-submit">{{section.settings.button_label}}</button> -->
+        </div>
+        <div class="section-footer">
+            <span>{{section.settings.section_footer}}</span>
+        </div>
+    </div>
+</section>
+
+<style>
+    [data-section-id="{{ section.id }}"] {
+        background-color: {{ section.settings.background_color }};
+        position: relative;
+        margin-top: 10vw;
+        min-height: 20vw;
+    }
+
+    section[data-section-id="{{ section.id }}"]::before {
+        content: "";
+        width: 100%;
+        height: 20vw;
+        background-color: {{ section.settings.background_color }};
+        display: inline;
+        position: absolute;
+        transform: skewY(-11deg);
+        top: -10vw;
+    }
+
+    [data-section-id="{{ section.id }}"] > .container {
+        padding-top: 0 !important;
+    }
+
+    [data-section-id="{{ section.id }}"] .section-title {
+        font-weight: 900;
+        letter-spacing: normal;
+        margin-bottom: 0;
+    }
+
+    [data-section-id="{{ section.id }}"] .weight-2 {
+        font-weight: 700;
+    }
+
+    [data-section-id="{{ section.id }}"] .subscribe {
+        margin-top: 20px;
+    }
+
+    [data-section-id="{{ section.id }}"] .subscribe form {
+        display: flex;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    [data-section-id="{{ section.id }}"] .subscribe input {
+        border-radius: unset;
+        background: rgba(58,58,58,.74);
+        border: unset;
+        color: white;
+        font-style: italic;
+        font-size: 17px;
+    }
+
+    [data-section-id="{{ section.id }}"] .subscribe button {
+        border-radius: unset;
+    }
+
+    [data-section-id="{{ section.id }}"] .section-footer span {
+        font-size: 13px;
+    }
+
+    [data-section-id="{{ section.id }}"] .section-footer span a {
+        color: white;
+        text-decoration: underline;
+    }
+
+    @media(min-width: 992px) {
+        section[data-section-id="{{ section.id }}"]::before {
+            height: 10vw;
+            transform: skewY(-5deg);
+            top: -5vw;
+        }
+    }
+</style>
+
+{% schema %}
+{
+    "name": "Newsletter",
+    "settings": [
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background Color"
+        },
+        {
+            "type": "text",
+            "id": "section_title",
+            "label": "Heading",
+            "default": "Möchtest du 10% Rabatt?"
+        },
+        {
+            "type": "textarea",
+            "id": "section_content",
+            "label": "Content",
+            "default": "Werde Teil unseres Newsletters und erhalte 10% Rabatt auf deine erste Bestellung. Außerdem hast du die Chance, jeden Monat Skins zu gewinnen und erfährst als erster von exklusiven Angeboten"
+        },
+        {
+            "type": "textarea",
+            "id": "section_footer",
+            "label": "Footer",
+            "default": "Durch klicken auf „ABONNIEREN“ akzeptierst du unsere Datenschutzbestimmungen und abonnierst unseren Newsletter. Du kannst dich jederzeit wieder abmelden."
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button Label",
+            "default": "ABONNIEREN"
+        }
+    ]
+}
+{% endschema %}

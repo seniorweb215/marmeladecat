@@ -75,6 +75,8 @@
               </p>
             {% endif %}
             <h1 class="product_name">{{ product.title }}</h1>
+            {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
+            
             {% if section.settings.enable_shopify_product_badges and settings.enable_shopify_review_comments %}
               <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
             {% endif %}

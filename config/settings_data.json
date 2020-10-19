@@ -4180,7 +4180,7 @@
     "display_savings": false,
     "cart_message": "",
     "freeshipping_amount": "20",
-    "announcement_message": "Durch klicken auf „ZUR KASSE GEHEN“ akzeptierst du unsere AGBs.",
+    "announcement_message": "Durch Klicken auf „ZUR KASSE GEHEN“ akzeptierst du unsere AGBs.",
     "crosssell_announcement_message": "Möchtest du den kompletten Kratzerschutz?",
     "crosssell_product_description": "\"Ein robuster Displayschutz aus 9H Echtglas\"",
     "show_shipping_calculator": false,
@@ -4218,7 +4218,7 @@
     "vimeo_link": "",
     "pinterest_link": "",
     "tumblr_link": "",
-    "instagram_link": "https:\/\/instagram.com\/marmeladecatskins",
+    "instagram_link": "https:\/\/instagram.com\/marmeladecat",
     "snapchat_link": "",
     "houzz_link": "",
     "linkedin_link": "",
@@ -5110,6 +5110,13 @@
               "subtitle": "<p>Keine Sorge! Es passiert h&auml;ufiger, dass beim Aufbringen der Laschen Wellen entstehen. Wenn sie&nbsp;durch Erw&auml;rmung mit dem F&ouml;n und Reiben mit dem Mikrofasertuch nicht entfernt werden k&ouml;nnen, empfehlen wir dir, die Lasche von der Ecke zu l&ouml;sen und erneut anzubringen.&nbsp;<\/p>"
             }
           },
+          "1601298225511": {
+            "type": "Content",
+            "settings": {
+              "title": "Ich habe den Skin bei der Installation zerissen. Was nun?",
+              "subtitle": "<p>Unsere Skins sind sehr widerstandsf&auml;hig und sollten, wenn du unsere <a href=\"\/pages\/anleitungen\" title=\"Anleitungen\">Anleitungen<\/a> befolgst, nicht kaputt gehen.<\/p>\n<p><\/p>\n<p>Falls dein Skin dennoch durch die Installation besch&auml;digt wurde, schicken wir dir gerne Ersatz. Mehr Informationen zur Installationsgarantie findest du <a href=\"\/pages\/die-installationsgarantie\" title=\"Die Installationsgarantie\">hier<\/a>.<\/p>"
+            }
+          },
           "page-faq-template-4": {
             "type": "heading",
             "settings": {
@@ -5127,21 +5134,21 @@
             "type": "Content",
             "settings": {
               "title": "Welche Zahlungsmethoden werden akzeptiert?",
-              "subtitle": "<p>Wir versuchen den Bestellprozess bei uns im Shop so angenehm wie m&ouml;glich zu gestalten und unterst&uuml;tzen eine Vielzahl von unterschiedlichen Zahlungsarten:<\/p>\n<p><\/p>\n<p>-Rechnung (Klarna)<\/p>\n<p>-Paypal<\/p>\n<p>-Sofort-&Uuml;berweisung<\/p>\n<p>-Mastercard<\/p>\n<p>-Visacard<\/p>\n<p>-American Express<\/p>\n<p>-Apple Pay&nbsp;<\/p>\n<p>-Google Pay<\/p>\n<p><\/p>\n<p>Falls deine bevorzugte Bezahlmethode nicht vorhanden sein sollte, kontaktiere uns mit dem <a href=\"\/pages\/kontakt\" title=\"Wir sind f&uuml;r Dich da!\">Kontaktformular<\/a>. Eventuell besteht die M&ouml;glichkeit diese in Zukunft zu integrieren.<\/p>\n<p><\/p>"
+              "subtitle": "<p>Wir versuchen den Bestellprozess bei uns im Shop so angenehm wie m&ouml;glich zu gestalten und unterst&uuml;tzen eine Vielzahl von unterschiedlichen Zahlungsarten:<\/p>\n<p><\/p>\n<p>-Rechnung (Klarna)<\/p>\n<p>-Paypal<\/p>\n<p>-Sofort-&Uuml;berweisung<\/p>\n<p>-Mastercard<\/p>\n<p>-Visacard<\/p>\n<p>-American Express<\/p>\n<p>-Apple Pay&nbsp;<\/p>\n<p>-Google Pay<\/p>\n<p>-Shop Pay<\/p>\n<p><\/p>\n<p>Falls deine bevorzugte Bezahlmethode nicht vorhanden sein sollte, kontaktiere uns mit dem <a href=\"\/pages\/kontakt\" title=\"Wir sind f&uuml;r Dich da!\">Kontaktformular<\/a>. Eventuell besteht die M&ouml;glichkeit diese in Zukunft zu integrieren.<\/p>\n<p><\/p>"
             }
           },
           "1558857904836": {
             "type": "Content",
             "settings": {
               "title": "Wie viel kostet der Versand?",
-              "subtitle": "<p>Standardversand kostet 1,90&euro; per Deutsche Post. F&uuml;r eine zus&auml;tzliche Geb&uuml;hr in H&ouml;he von &nbsp;1,00&euro; kann der Versand auch mit Tracking erfolgen.<\/p>\n<p><\/p>\n<p>Ab einem Bestellwert von 30&euro; entfallen jegliche Versandkosten.&nbsp;<\/p>"
+              "subtitle": "<p>Standardversand kostet 0,99&euro; per Deutsche Post.<\/p>\n<p>Ab einem Bestellwert von 20&euro; entfallen jegliche Versandkosten.&nbsp;<\/p>"
             }
           },
           "1558858111453": {
             "type": "Content",
             "settings": {
               "title": "Kann ich den Skin zurückgeben?",
-              "subtitle": "<p>Innerhalb von 14 Tagen nach Erhalt der Ware kannst du, ohne Angabe von Gr&uuml;nden, vom Widerrufsrecht Gebrauch machen. Kontaktiere uns daf&uuml;r bitte einfach auf dem Weg, der f&uuml;r dich am einfachsten ist. <a href=\"\/pages\/kontakt\" title=\"Wir sind f&uuml;r Dich da!\">Hier geht's zum Kontaktformular.<\/a><\/p>"
+              "subtitle": "<p>Innerhalb von 30 Tagen nach Erhalt der Ware kannst du, ohne Angabe von Gr&uuml;nden, vom Widerrufsrecht Gebrauch machen. Kontaktiere uns daf&uuml;r bitte einfach auf dem Weg, der f&uuml;r dich am einfachsten ist. <a href=\"\/pages\/kontakt\" title=\"Wir sind f&uuml;r Dich da!\">Hier geht's zum Kontaktformular.<\/a><\/p>"
             }
           }
         },
@@ -5155,6 +5162,7 @@
           "1558856783541",
           "page-faq-template-7",
           "page-faq-template-5",
+          "1601298225511",
           "page-faq-template-4",
           "page-faq-template-6",
           "1558857490991",
@@ -5600,35 +5608,84 @@
           "toggle": false
         }
       },
-      "1588331480351": {
-        "type": "image-text",
+      "product-skin-description-template": {
+        "type": "product-skin-description-template",
         "blocks": {
-          "1588331480351-0": {
-            "type": "image",
+          "1599846058957": {
+            "type": "accordion_content",
             "settings": {
-              "image": "shopify:\/\/shop_images\/maske.png",
-              "image_crop": "none",
-              "title": "Hilf mit beim Kampf gegen COVID-19",
-              "text": "<p>Wir wollen dir&nbsp;helfen, w&auml;hrend der Epidemie sicher zu bleiben. Deshalb erh&auml;lt jede Bestellung ab 20&euro; eine wiederverwendbare Maske <strong>komplett kostenlos<\/strong>. BITTE BEACHTEN: Du musst die Maske mit in den Warenkorb legen.<\/p>",
-              "button_label": "Zur Maske",
-              "link": "shopify:\/\/products\/gesichtsmaske",
-              "bg_color": "#3a3a3a",
-              "text_color": ""
+              "collection_handle": "iphone",
+              "faq_content": "<p><strong>Was ist ein Skin?<\/strong><\/p>\n<p>Ein Skin ist eine ultra passgenaue Folierung f&uuml;r dein Device. Es sch&uuml;tzt dein Device vor Kratzern mit nur minimaler Ver&auml;nderungen der Ergonomie. Du kannst zwischen einer Vielzahl von Designs w&auml;hlen.<\/p>\n<p><\/p>\n<p><strong>Ist das [product_name]&nbsp;nach der Installation noch mit meinem Zubeh&ouml;r kompatibel?<\/strong><\/p>\n<p>Uns ist kein Zubeh&ouml;r bekannt, das nach Installation des Skins nicht mehr verwendet werden konnte. Deine H&uuml;llen passen &uuml;ber den Skin und die Wireless Charging Funktion eines [product_name]&nbsp;wird nicht beeintr&auml;chtigt.<\/p>\n<p><\/p>\n<p><strong>Ist der Skin r&uuml;ckstandslos entfernbar?<\/strong><\/p>\n<p>Ja, selbstverst&auml;ndlich. Falls du den Skin wieder entfernen willst, kannst du diesen einfach abziehen. In seltenen F&auml;llen bleiben minimale Kleberr&uuml;ckst&auml;nde zur&uuml;ck, welche jedoch problemlos mit einem Reinigungstuch entfernt werden k&ouml;nnen.<\/p>\n<p><\/p>\n<p><strong>L&ouml;st sich der Skin beim Kontakt mit Wasser?<\/strong><\/p>\n<p>Nein, bei Regen oder sonstigem Kontakt mit Wasser brauchst du keine Angst zu haben, dass sich der Skin abl&ouml;st. Wir empfehlen dir aber, deinem [product_name] zuliebe, jeden Kontakt mit Wasser zu vermeiden.<\/p>",
+              "features_content": "<p><strong>Style<\/strong><\/p>\n<p>- Individuell passend zu Deinem Style<\/p>\n<p>- Verleiht deinem [product_name]&nbsp;das Design, das zu Dir passt<\/p>\n<p>- Schluss mit unsch&ouml;nen Fingerabdr&uuml;cken auf der R&uuml;ckseite deines [product_name]<\/p>\n<p>- Einheitliche Optik von iPhone, iPad, MacBook, AirPods und Apple Watch durch gleiche Skins<\/p>\n<p><strong>Genauigkeit<\/strong><\/p>\n<p>- Griffige Haptik f&uuml;r mehr Halt<\/p>\n<p>- Extrem d&uuml;nn und passgenau<\/p>\n<p>- Ergonomie bleibt erhalten<\/p>\n<p>- 100% kompatibel mit H&uuml;llen und anderem Zubeh&ouml;r<\/p>\n<p><strong>Schutz<\/strong><\/p>\n<p>- Idealer Schutz vor Kratzern<\/p>\n<p>- Steigert den Wiederverkaufswert des [product_name]<\/p>\n<p>- Leicht selbst aufzubringen und ohne R&uuml;ckst&auml;nde wieder entfernbar<\/p>\n<p><strong>Qualit&auml;t<\/strong><\/p>\n<p>- Frei von Blasenbildung durch High-End Folien mit Luftkan&auml;len<\/p>\n<p>- Alle Materialen von den Marktf&uuml;hrern 3M und Orafol<\/p>\n<p>- Made in Germany &ndash; In Deutschland gefertigt<\/p>\n<p>- Schneller Versand garantiert<\/p>",
+              "video_url": "https:\/\/www.youtube.com\/embed\/aJdEdey1dqI",
+              "video_content": "",
+              "whats_image": "shopify:\/\/shop_images\/lieferumfang-iphone-skin.jpg",
+              "whats_content": "<p>Im Lieferumfang ist der pr&auml;zise gefertigte <strong>Marmelade Cat Skin<\/strong>, ein <strong>Alkoholreinigungspad<\/strong> zum Reinigen deines&nbsp;[product_name], ein trockenes <strong>Reinigungspad<\/strong>und ein <strong>Marmelade Cat Mikrofasertuch<\/strong>, um das perfekte Ergebnis zu erreichen. Erg&auml;nzend zum Lieferumfang ben&ouml;tigst du nur noch einen F&ouml;n und nat&uuml;rlich das zu skinnende [product_name]. Weitere Informationen zur Installation des Skins findest du im Reiter Anleitung.<\/p>"
+            }
+          },
+          "1600004114089": {
+            "type": "accordion_content",
+            "settings": {
+              "collection_handle": "macbook",
+              "faq_content": "<p><strong>Was ist ein Skin?<\/strong><\/p>\n<p>Ein Skin ist eine ultra passgenaue Folierung f&uuml;r dein Device. Es sch&uuml;tzt dein Device vor Kratzern mit nur minimaler Ver&auml;nderungen der Ergonomie. Du kannst zwischen einer Vielzahl von Designs w&auml;hlen.<\/p>\n<p><\/p>\n<p><strong>Ist das&nbsp;[product_name] nach der Installation noch mit meinem Zubeh&ouml;r kompatibel?<\/strong><\/p>\n<p>Uns ist kein Zubeh&ouml;r bekannt, das nach Installation des Skins nicht mehr verwendet werden konnte.<\/p>\n<p><\/p>\n<p><strong>Ist der Skin r&uuml;ckstandslos entfernbar?<\/strong><\/p>\n<p>Ja, selbstverst&auml;ndlich. Falls du den Skin wieder entfernen willst, kannst du diesen einfach abziehen. In seltenen F&auml;llen bleiben minimale Kleberr&uuml;ckst&auml;nde zur&uuml;ck, welche jedoch problemlos mit einem Reinigungstuch entfernt werden k&ouml;nnen.<\/p>\n<p><\/p>\n<p><strong>L&ouml;st sich der Skin beim Kontakt mit Wasser?<\/strong><\/p>\n<p>Nein, bei Regen oder sonstigem Kontakt mit Wasser brauchst du keine Angst zu haben, dass sich der Skin abl&ouml;st. Wir empfehlen dir aber, deinem Device zuliebe, jeden Kontakt mit Wasser zu vermeiden.<\/p>",
+              "features_content": "<p><strong>Style<\/strong><\/p>\n<p>- Individuell passend zu Deinem Style<\/p>\n<p>- Verleiht deinem [product_name] das Design, das zu Dir passt<\/p>\n<p>- Einheitliche Optik von iPhone, iPad, MacBook, AirPods und Apple Watch durch gleiche Skins<\/p>\n<p><strong>Genauigkeit<\/strong><\/p>\n<p>- Extrem d&uuml;nn und passgenau<\/p>\n<p>- Ergonomie bleibt erhalten 100%<\/p>\n<p>- kompatibel mit H&uuml;llen und anderem Zubeh&ouml;r<\/p>\n<p><strong>Schutz<\/strong><\/p>\n<p>- Idealer Schutz vor Kratzern<\/p>\n<p>- Steigert den Wiederverkaufswert des [product_name]<\/p>\n<p>- Leicht selbst aufzubringen und ohne R&uuml;ckst&auml;nde wieder entfernbar<\/p>\n<p><strong>Qualit&auml;t<\/strong><\/p>\n<p>- Frei von Blasenbildung durch High-End Folien mit Luftkan&auml;len<\/p>\n<p>- Alle Materialen von den Marktf&uuml;hrern 3M und Orafol<\/p>\n<p>- Made in Germany &ndash; In Deutschland gefertigt<\/p>\n<p>- Schneller Versand garantiert<\/p>",
+              "video_url": "",
+              "video_content": "<p>Leider ist unsere Videoanleitung f&uuml;r die MacBooks&nbsp;noch nicht fertiggestellt. Wir arbeiten mit Hochdruck an der Fertigstellung und werden die Anleitung bald hier erg&auml;nzen. Die Installation ist aber relativ einfach.<\/p>\n<p><\/p>\n<p>Falls Du Fragen hast, stehen wir Dir gerne zur Verf&uuml;gung. Nutze daf&uuml;r einfach das <a href=\"https:\/\/marmeladecat.com\/pages\/kontakt\" title=\"Kontaktformular\">Kontaktformular<\/a> und wir melden uns schnellstm&ouml;glich bei Dir.<\/p>\n<p><\/p>",
+              "whats_image": "shopify:\/\/shop_images\/lieferumfang-macbook-skin.jpg",
+              "whats_content": "<p>Im Lieferumfang ist der pr&auml;zise gefertigte <strong>Marmelade Cat Skin<\/strong>, ein <strong>Alkoholreinigungspad<\/strong> zum Reinigen deines [product_name], ein trockenes <strong>Reinigungspad<\/strong> und ein <strong>Marmelade Cat Mikrofasertuch<\/strong>, um das perfekte Ergebnis zu erreichen. Erg&auml;nzend zum Lieferumfang ben&ouml;tigst du nur noch einen F&ouml;n und nat&uuml;rlich das zu skinnende [product_name]. Weitere Informationen zur Installation des Skins findest du im Reiter Anleitung.<\/p>"
+            }
+          },
+          "1600617663894": {
+            "type": "accordion_content",
+            "settings": {
+              "collection_handle": "ipad",
+              "faq_content": "<p><strong>Was ist ein Skin?<\/strong><\/p>\n<p>Ein Skin ist eine ultra passgenaue Folierung f&uuml;r dein Device. Es sch&uuml;tzt dein Device vor Kratzern mit nur minimaler Ver&auml;nderungen der Ergonomie. Du kannst zwischen einer Vielzahl von Designs w&auml;hlen.<\/p>\n<p><\/p>\n<p><strong>Ist das [product_name] nach der Installation noch mit meinem Zubeh&ouml;r kompatibel?<\/strong><\/p>\n<p>Uns ist kein Zubeh&ouml;r bekannt, das nach Installation des Skins nicht mehr verwendet werden konnte. Deine H&uuml;llen passen &uuml;ber den Skin und dein Apple Pencil l&auml;dt weiter wie gewohnt an der Seite des iPads.<\/p>\n<p><\/p>\n<p><strong>Ist der Skin r&uuml;ckstandslos entfernbar?<\/strong><\/p>\n<p>Ja, selbstverst&auml;ndlich. Falls du den Skin wieder entfernen willst, kannst du diesen einfach abziehen. In seltenen F&auml;llen bleiben minimale Kleberr&uuml;ckst&auml;nde zur&uuml;ck, welche jedoch problemlos mit einem Reinigungstuch entfernt werden k&ouml;nnen.<\/p>\n<p><\/p>\n<p><strong>L&ouml;st sich der Skin beim Kontakt mit Wasser?<\/strong><\/p>\n<p>Nein, bei Regen oder sonstigem Kontakt mit Wasser brauchst du keine Angst zu haben, dass sich der Skin abl&ouml;st. Wir empfehlen dir aber, deinem Device zuliebe, jeden Kontakt mit Wasser zu vermeiden.<\/p>",
+              "features_content": "<p><strong>Style<\/strong><\/p>\n<p>- Individuell passend zu Deinem Style<\/p>\n<p>- Verleiht deinem [product_name] das Design, das zu Dir passt<\/p>\n<p>- Einheitliche Optik von iPhone, iPad, MacBook, AirPods und Apple Watch durch gleiche Skins<\/p>\n<p><strong>Genauigkeit<\/strong><\/p>\n<p>- Extrem d&uuml;nn und passgenau<\/p>\n<p>- Ergonomie bleibt erhalten 100%<\/p>\n<p>- kompatibel mit H&uuml;llen und anderem Zubeh&ouml;r<\/p>\n<p><strong>Schutz<\/strong><\/p>\n<p>- Idealer Schutz vor Kratzern<\/p>\n<p>- Steigert den Wiederverkaufswert des [product_name]<\/p>\n<p>- Leicht selbst aufzubringen und ohne R&uuml;ckst&auml;nde wieder entfernbar<\/p>\n<p><strong>Qualit&auml;t<\/strong><\/p>\n<p>- Frei von Blasenbildung durch High-End Folien mit Luftkan&auml;len<\/p>\n<p>- Alle Materialen von den Marktf&uuml;hrern 3M und Orafol<\/p>\n<p>- Made in Germany &ndash; In Deutschland gefertigt<\/p>\n<p>- Schneller Versand garantiert<\/p>",
+              "video_url": "",
+              "video_content": "<p>Leider ist unsere Videoanleitung f&uuml;r die iPads&nbsp;noch nicht fertiggestellt. Wir arbeiten mit Hochdruck an der Fertigstellung und werden die Anleitung bald hier erg&auml;nzen. Die Installation ist aber relativ einfach.<\/p>\n<p><\/p>\n<p>Falls Du Fragen hast, stehen wir Dir gerne zur Verf&uuml;gung. Nutze daf&uuml;r einfach das <a href=\"https:\/\/marmeladecat.com\/pages\/kontakt\" title=\"Kontaktformular\">Kontaktformular<\/a> und wir melden uns schnellstm&ouml;glich bei Dir.<\/p>",
+              "whats_image": "shopify:\/\/shop_images\/lieferumfang-iphone-skin.jpg",
+              "whats_content": "<p>Im Lieferumfang ist der pr&auml;zise gefertigte <strong>Marmelade Cat Skin<\/strong>, ein <strong>Alkoholreinigungspad<\/strong> zum Reinigen deines [product_name], ein trockenes <strong>Reinigungspad<\/strong> und ein <strong>Marmelade Cat Mikrofasertuch<\/strong>, um das perfekte Ergebnis zu erreichen. Erg&auml;nzend zum Lieferumfang ben&ouml;tigst du nur noch einen F&ouml;n und nat&uuml;rlich das zu skinnende [product_name]. Weitere Informationen zur Installation des Skins findest du im Reiter Anleitung.<\/p>"
+            }
+          },
+          "1600618062869": {
+            "type": "accordion_content",
+            "settings": {
+              "collection_handle": "airpods",
+              "faq_content": "<p><strong>Was ist ein Skin?<\/strong><\/p>\n<p>Ein Skin ist eine ultra passgenaue Folierung f&uuml;r dein Device. Es sch&uuml;tzt dein Device vor Kratzern mit nur minimaler Ver&auml;nderungen der Ergonomie. Du kannst zwischen einer Vielzahl von Designs w&auml;hlen.<\/p>\n<p><\/p>\n<p><strong>Ist das&nbsp;[product_name] nach der Installation noch mit meinem Zubeh&ouml;r kompatibel?<\/strong><\/p>\n<p>Uns ist kein Zubeh&ouml;r bekannt, das nach Installation des Skins nicht mehr verwendet werden konnte.<\/p>\n<p><\/p>\n<p><strong>Ist der Skin r&uuml;ckstandslos entfernbar?<\/strong><\/p>\n<p>Ja, selbstverst&auml;ndlich. Falls du den Skin wieder entfernen willst, kannst du diesen einfach abziehen. In seltenen F&auml;llen bleiben minimale Kleberr&uuml;ckst&auml;nde zur&uuml;ck, welche jedoch problemlos mit einem Reinigungstuch entfernt werden k&ouml;nnen.<\/p>\n<p><\/p>\n<p><strong>L&ouml;st sich der Skin beim Kontakt mit Wasser?<\/strong><\/p>\n<p>Nein, bei Regen oder sonstigem Kontakt mit Wasser brauchst du keine Angst zu haben, dass sich der Skin abl&ouml;st. Wir empfehlen dir aber, deinem Device zuliebe, jeden Kontakt mit Wasser zu vermeiden.<\/p>",
+              "features_content": "<p><strong>Style<\/strong><\/p>\n<p>- Individuell passend zu Deinem Style<\/p>\n<p>- Verleiht deinen [product_name] das Design, das zu Dir passt<\/p>\n<p>- Einheitliche Optik von iPhone, iPad, MacBook, AirPods und Apple Watch durch gleiche Skins<\/p>\n<p><strong>Genauigkeit<\/strong><\/p>\n<p>- Extrem d&uuml;nn und passgenau<\/p>\n<p>- Ergonomie bleibt erhalten 100%<\/p>\n<p>- kompatibel mit H&uuml;llen und anderem Zubeh&ouml;r<\/p>\n<p><strong>Schutz<\/strong><\/p>\n<p>- Idealer Schutz vor Kratzern<\/p>\n<p>- Steigert den Wiederverkaufswert der [product_name]<\/p>\n<p>- Leicht selbst aufzubringen und ohne R&uuml;ckst&auml;nde wieder entfernbar<\/p>\n<p><strong>Qualit&auml;t<\/strong><\/p>\n<p>- Frei von Blasenbildung durch High-End Folien mit Luftkan&auml;len<\/p>\n<p>- Alle Materialen von den Marktf&uuml;hrern 3M und Orafol<\/p>\n<p>- Made in Germany &ndash; In Deutschland gefertigt<\/p>\n<p>- Schneller Versand garantiert<\/p>",
+              "video_url": "",
+              "video_content": "<p>Leider ist unsere Videoanleitung f&uuml;r die AirPods&nbsp;noch nicht fertiggestellt. Wir arbeiten mit Hochdruck an der Fertigstellung und werden die Anleitung bald hier erg&auml;nzen.<\/p>\n<p><a href=\"\/pages\/airpods-pro-skin-installation\" title=\"AirPods Pro Skin Installation\">Hier<\/a> geht es zur Anleitung f&uuml;r die AirPods Pro<\/p>\n<p><a href=\"\/pages\/anleitung-airpod-skin-installation\" title=\"Anleitung: AirPod Skin Installation\">Hier<\/a> geht es zur Anleitung f&uuml;r die normalen AirPods<\/p>\n<p><\/p>\n<p>Falls Du Fragen hast, stehen wir Dir gerne zur Verf&uuml;gung. Nutze daf&uuml;r einfach das <a href=\"\/pages\/kontakt\" title=\"Wir sind f&uuml;r Dich da!\">Kontaktformular<\/a>&nbsp;und wir melden uns schnellstm&ouml;glich bei Dir.<\/p>",
+              "whats_image": "shopify:\/\/shop_images\/Lieferumfang_Airpods_Pro_Skin_30886a96-452c-446e-9c97-6d95fb63fbc3.jpg",
+              "whats_content": "<p>Im Lieferumfang ist der pr&auml;zise gefertigte <strong>Marmelade Cat Skin<\/strong>, ein <strong>Alkoholreinigungspad<\/strong> zum Reinigen deiner AirPods, ein trockenes <strong>Reinigungspad<\/strong> und ein <strong>Marmelade Cat Mikrofasertuch<\/strong>, um das perfekte Ergebnis zu erreichen. Erg&auml;nzend zum Lieferumfang ben&ouml;tigst du nur noch einen F&ouml;n und nat&uuml;rlich die zu skinnenden&nbsp;AirPods. Weitere Informationen zur Installation des Skins findest du im Reiter Anleitung.<\/p>"
+            }
+          },
+          "1600618428180": {
+            "type": "accordion_content",
+            "settings": {
+              "collection_handle": "apple-watch",
+              "faq_content": "<p><strong>Was ist ein Skin?<\/strong><\/p>\n<p>Ein Skin ist eine ultra passgenaue Folierung f&uuml;r dein Device. Es sch&uuml;tzt dein Device vor Kratzern mit nur minimaler Ver&auml;nderungen der Ergonomie. Du kannst zwischen einer Vielzahl von Designs w&auml;hlen.<\/p>\n<p><\/p>\n<p><strong>Ist die&nbsp;[product_name] nach der Installation noch mit meinem Zubeh&ouml;r kompatibel?<\/strong><\/p>\n<p>Uns ist kein Zubeh&ouml;r bekannt, das nach Installation des Skins nicht mehr verwendet werden konnte.<\/p>\n<p><\/p>\n<p><strong>Ist der Skin r&uuml;ckstandslos entfernbar?<\/strong><\/p>\n<p>Ja, selbstverst&auml;ndlich. Falls du den Skin wieder entfernen willst, kannst du diesen einfach abziehen. In seltenen F&auml;llen bleiben minimale Kleberr&uuml;ckst&auml;nde zur&uuml;ck, welche jedoch problemlos mit einem Reinigungstuch entfernt werden k&ouml;nnen.<\/p>\n<p><\/p>\n<p><strong>L&ouml;st sich der Skin beim Kontakt mit Wasser?<\/strong><\/p>\n<p>Nein, bei Regen oder sonstigem Kontakt mit Wasser brauchst du keine Angst zu haben, dass sich der Skin abl&ouml;st. Wir empfehlen dir aber, deinem Device zuliebe, jeden Kontakt mit Wasser zu vermeiden.<\/p>",
+              "features_content": "<p><strong>Style<\/strong><\/p>\n<p>- Individuell passend zu Deinem Style<\/p>\n<p>- Verleiht deiner&nbsp;[product_name] das Design, das zu Dir passt<\/p>\n<p>- Einheitliche Optik von iPhone, iPad, MacBook, AirPods und Apple Watch durch gleiche Skins<\/p>\n<p><strong>Genauigkeit<\/strong><\/p>\n<p>- Extrem d&uuml;nn und passgenau<\/p>\n<p>- Ergonomie bleibt erhalten 100%<\/p>\n<p>- kompatibel mit H&uuml;llen und anderem Zubeh&ouml;r<\/p>\n<p><strong>Schutz<\/strong><\/p>\n<p>- Idealer Schutz vor Kratzern<\/p>\n<p>- Steigert den Wiederverkaufswert der [product_name]<\/p>\n<p>- Leicht selbst aufzubringen und ohne R&uuml;ckst&auml;nde wieder entfernbar<\/p>\n<p><strong>Qualit&auml;t<\/strong><\/p>\n<p>- Frei von Blasenbildung durch High-End Folien mit Luftkan&auml;len<\/p>\n<p>- Alle Materialen von den Marktf&uuml;hrern 3M und Orafol<\/p>\n<p>- Made in Germany &ndash; In Deutschland gefertigt<\/p>\n<p>- Schneller Versand garantiert<\/p>",
+              "video_url": "",
+              "video_content": "<p>Leider ist unsere Videoanleitung f&uuml;r&nbsp;Apple Watches&nbsp;noch nicht fertiggestellt. Wir arbeiten mit Hochdruck an der Fertigstellung und werden die Anleitung bald hier erg&auml;nzen.<\/p>\n<p><a href=\"\/pages\/anleitung-apple-watch-marmelade-cat-skin-installation\" title=\"Anleitung: Apple Watch Marmelade Cat Skin Installation\">Hier<\/a> geht es zur vor&uuml;bergehenden Anleitung f&uuml;r die Apple Watch.<\/p>\n<p><\/p>\n<p>Falls Du Fragen hast, stehen wir Dir gerne zur Verf&uuml;gung. Nutze daf&uuml;r einfach das <a href=\"\/pages\/kontakt\" title=\"Wir sind f&uuml;r Dich da!\">Kontaktformular<\/a>&nbsp;und wir melden uns schnellstm&ouml;glich bei Dir.<\/p>",
+              "whats_image": "shopify:\/\/shop_images\/LieferumfangAppleWatchSkins.jpg",
+              "whats_content": "<p>Im Lieferumfang ist der pr&auml;zise gefertigte <strong>Marmelade Cat Skin<\/strong>, ein <strong>Alkoholreinigungspad<\/strong> zum Reinigen deiner [product_name], ein trockenes <strong>Reinigungspad<\/strong> und ein <strong>Marmelade Cat Mikrofasertuch<\/strong>, um das perfekte Ergebnis zu erreichen. Erg&auml;nzend zum Lieferumfang ben&ouml;tigst du nur noch einen F&ouml;n und nat&uuml;rlich die zu skinnende [product_name]. Weitere Informationen zur Installation des Skins findest du im Reiter Anleitung.<\/p>"
+            }
+          },
+          "1599738688099": {
+            "type": "shipping_info",
+            "settings": {
+              "content": "<p><strong>Versand&nbsp;derzeit nur nach Deutschland<\/strong><\/p>\n<p>- Lieferzeit: 1-3 Tage<\/p>\n<p>- Versandkosten: 0,99&euro;&nbsp;<\/p>\n<p>- Ab 20&euro; Bestellwert <strong>entfallen die Versandkosten<\/strong><\/p>\n<p>- Versand per Deutsche Post Briefversand<\/p>"
             }
           }
         },
         "block_order": [
-          "1588331480351-0"
+          "1599846058957",
+          "1600004114089",
+          "1600617663894",
+          "1600618062869",
+          "1600618428180",
+          "1599738688099"
         ],
-        "settings": {
-          "frontpage_grid_style": true,
-          "featured_links_per_row": "1",
-          "frontpage_text_align": "left",
-          "frontpage_image_position": "left"
-        }
-      },
-      "product-skin-description-template": {
-        "type": "product-skin-description-template",
         "settings": {
           "product_breadcrumb": false,
           "display_vendor": false,
@@ -5647,7 +5704,7 @@
           "product_images_position": "left",
           "product_thumbs": false,
           "thumbnail_position": "bottom-slider",
-          "enable_shopify_product_badges": false,
+          "enable_shopify_product_badges": true,
           "review_position": "next_to_gallery",
           "show_payment_button": true,
           "display_recently_viewed": false,
@@ -5655,8 +5712,560 @@
           "rv_products_style": "grid",
           "rv_max_display": 4,
           "rv_per": 4,
-          "toggle": false
+          "toggle": false,
+          "color_sort": "schwarzes Camo,black camo,gruenes Camo,green camo,verbranntes Holz,burned wood,schwarze Bienenwabe,black honeycomb,schwarzes Hive,black hive,silbernes Hive,silver Hive,blauer Vortex,blue vortex,gruener Vortex,green vortex,roter Vortex,red vortex,Siargao,schwarzes Carbon,black carbon,silbernes Carbon,weisses Carbon,white carbon,rot,gelb,gruen,blau,red,yellow,green,blue,pink,concrete, marble,Beton,mahagoni,beech,walnut,Nussbaum,Buche,weißes Holz,gold meliert,gold flecked",
+          "variant_color_value": "Bestseller:schwarzes Camo,black camo,gruenes Camo,green camo,verbranntes Holz,burned wood,schwarze Bienenwabe,black honeycomb|||Hive:schwarzes Hive,black hive,silbernes Hive,silver Hive|||Vortex:blauer Vortex,blue vortex,gruener Vortex,green vortex,roter Vortex,red vortex|||Siargao:Siargao|||Carbon:schwarzes Carbon,black carbon,silbernes Carbon,weisses Carbon,white carbon|||Farben:rot,gelb,gruen,blau|||Colors:red,yellow,green,blue|||Stein:Beton|||Stone:concrete|||Holz:Mahagoni,Nussbaum,Buche,weißes Holz|||Wood:mahagoni,walnut|||gold meliert:gold meliert|||gold flecked:gold flecked|||"
         }
+      },
+      "entdecken-image": {
+        "type": "entdecken-image",
+        "settings": {
+          "background_image": "shopify:\/\/shop_images\/website_blackline_thumbnail.jpg"
+        }
+      },
+      "entdecken-image-blocks": {
+        "type": "entdecken-image-blocks",
+        "blocks": {
+          "1593090326520": {
+            "type": "text-image",
+            "settings": {
+              "image_url": "shopify:\/\/shop_images\/camo.png",
+              "label_text": "Camo"
+            }
+          },
+          "1593091238234": {
+            "type": "text-image",
+            "settings": {
+              "image_url": "shopify:\/\/shop_images\/carbon.png",
+              "label_text": "Carbon"
+            }
+          },
+          "1593091310389": {
+            "type": "text-image",
+            "settings": {
+              "image_url": "shopify:\/\/shop_images\/verbranntes-holz.png",
+              "label_text": "Verbranntes Holz"
+            }
+          },
+          "1593091360035": {
+            "type": "text-image",
+            "settings": {
+              "image_url": "shopify:\/\/shop_images\/bienenwabe.png",
+              "label_text": "Bienenwabe"
+            }
+          },
+          "1593091550831": {
+            "type": "text-image",
+            "settings": {
+              "image_url": "shopify:\/\/shop_images\/hive.png",
+              "label_text": "Hive"
+            }
+          }
+        },
+        "block_order": [
+          "1593090326520",
+          "1593091238234",
+          "1593091310389",
+          "1593091360035",
+          "1593091550831"
+        ],
+        "settings": {
+          "background_image": "shopify:\/\/shop_images\/verbranntes_holz_f5fbfaa9-bab6-4c14-8128-24642a8fcd50.jpg",
+          "hide_banner": false,
+          "background_color": "#000000",
+          "section_title": "Wir lassen langweilige Technik schön aussehen 🔥",
+          "section_description": "Seit 2018 entwickelt Marmelade Cat die wahrscheinlich besten Folierungen um deine Devices an dich anzupassen",
+          "show_images": false
+        }
+      },
+      "entdecken-image-text": {
+        "type": "entdecken-image-text",
+        "settings": {
+          "show_section": true,
+          "background_color": "#f74f4f",
+          "image_url": "shopify:\/\/shop_images\/set_2.JPG",
+          "header_text": "Was ist ein Skin?",
+          "subtext1": "Ein Skin ist eine absolut passgenaue\nFolierung für dein Device.",
+          "subtext2": "Unsere Folien sind mit jedem Zubehör, Hüllen und Wireless Charging kompatibel",
+          "subtext2_background": "",
+          "subtext2_color": "",
+          "button_label": "Jetzt Konfigurieren"
+        }
+      },
+      "entdecken-icons": {
+        "type": "entdecken-icons",
+        "blocks": {
+          "1593376305956": {
+            "type": "icon-image",
+            "settings": {
+              "icon_url": "shopify:\/\/shop_images\/iconsV2-05.png",
+              "label_text": "Hochwertige Materialien"
+            }
+          },
+          "1593376343170": {
+            "type": "icon-image",
+            "settings": {
+              "icon_url": "shopify:\/\/shop_images\/iconsV2-03.png",
+              "label_text": "Schützt vor Kratzern"
+            }
+          },
+          "1593376678257": {
+            "type": "icon-image",
+            "settings": {
+              "icon_url": "shopify:\/\/shop_images\/iconsV2-01.png",
+              "label_text": "Leichte Installation"
+            }
+          },
+          "1593376743972": {
+            "type": "icon-image",
+            "settings": {
+              "icon_url": "shopify:\/\/shop_images\/iconsV2-02.png",
+              "label_text": "Rückstandslos entfernbar"
+            }
+          },
+          "1593376769500": {
+            "type": "icon-image",
+            "settings": {
+              "icon_url": "shopify:\/\/shop_images\/iconsV2-04.png",
+              "label_text": "Made in Germany"
+            }
+          },
+          "1593574253827": {
+            "type": "slider-item",
+            "settings": {
+              "image_url": "shopify:\/\/shop_images\/schwarzes_hive.jpg"
+            }
+          },
+          "1593574319347": {
+            "type": "slider-item",
+            "settings": {
+              "image_url": "shopify:\/\/shop_images\/detail_v2.jpg"
+            }
+          },
+          "1594379995193": {
+            "type": "slider-item",
+            "settings": {
+              "image_url": "shopify:\/\/shop_images\/weisses_carbon.jpg"
+            }
+          },
+          "1593574304921": {
+            "type": "slider-item",
+            "settings": {
+              "image_url": "shopify:\/\/shop_images\/image3.jpg"
+            }
+          },
+          "1593574297632": {
+            "type": "slider-item",
+            "settings": {
+              "image_url": "shopify:\/\/shop_images\/image4.jpg"
+            }
+          },
+          "1593574311995": {
+            "type": "slider-item",
+            "settings": {
+              "image_url": "shopify:\/\/shop_images\/image1_de4df0fd-99ba-4838-9be2-6fba0d3fb823.jpg"
+            }
+          },
+          "1593619969967": {
+            "type": "slider-item",
+            "settings": {
+              "image_url": "shopify:\/\/shop_images\/schwarzes_camo_v2.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1593376305956",
+          "1593376343170",
+          "1593376678257",
+          "1593376743972",
+          "1593376769500",
+          "1593574253827",
+          "1593574319347",
+          "1594379995193",
+          "1593574304921",
+          "1593574297632",
+          "1593574311995",
+          "1593619969967"
+        ],
+        "settings": {
+          "background_color": "#000000",
+          "section_title": "Style trifft auf Schutz",
+          "sub_title": "Unsere <span class=\"weight-2\">Folierungen<\/span>",
+          "button_label": "Jetzt Konfigurieren"
+        }
+      },
+      "entdecken-image-slider": {
+        "type": "entdecken-image-slider",
+        "settings": {
+          "background_color": "#3a3a3a"
+        }
+      },
+      "entdecken-image-text-2": {
+        "type": "entdecken-image-text-2",
+        "settings": {
+          "show_section": true,
+          "background_color": "#000000",
+          "image_url": "shopify:\/\/shop_images\/logo.jpg",
+          "header_text": "Unsere Philosophie",
+          "subtext1": "Marmelade Cat steht für Individualität und Einzigartigkeit. Wir vereinigen eine Vielzahl an Designs mit der Qualität unserer Manufaktur in Frankfurt um ein unvergleichbares Ergebnis Für deine Geräte zu schaffen.",
+          "subtext2": "",
+          "subtext2_background": "",
+          "subtext2_color": "",
+          "button_label": "Mehr über uns"
+        }
+      },
+      "entdecken-footer": {
+        "type": "entdecken-footer",
+        "settings": {
+          "background_color": "#f74f4f",
+          "section_title": "Möchtest du 10% Rabatt?",
+          "section_content": "Werde Teil unseres Newsletters und erhalte <span class=\"weight-2\">10% Rabatt<\/span> auf deine erste Bestellung. Außerdem veranstalten wir exklusive Gewinnspiele und du erfährst als erster von exklusiven Angeboten.",
+          "section_footer": "Durch klicken auf „ABONNIEREN“ akzeptierst du unsere <a href=\"https:\/\/www.marmeladecat.com\">Datenschutzbestimmungen<\/a> und abonnierst unseren Newsletter. Du kannst dich jederzeit wieder abmelden.",
+          "button_label": "ABONNIEREN"
+        }
+      },
+      "entdecken-image-blocks-2": {
+        "type": "entdecken-image-blocks-2",
+        "settings": {
+          "background_image": "shopify:\/\/shop_images\/IMG_8406-1-2.jpg",
+          "hide_banner": false,
+          "background_color": "#000000",
+          "section_title": "Wir lassen langweilige Technik schön aussehen 🔥",
+          "section_description": "Seit 2018 entwickelt Marmelade Cat die wahrscheinlich besten Folierungen um deine Devices an dich anzupassen.",
+          "show_images": false
+        }
+      },
+      "entdecken-image-text-2-1": {
+        "type": "entdecken-image-text-2-1",
+        "settings": {
+          "show_section": true,
+          "background_color": "#3c5189",
+          "image_url": "shopify:\/\/shop_images\/20200415-IMG_1883-1.jpg",
+          "header_text": "Extrem Dünn",
+          "subtext1": "Dein Device behält sein schlankes Design und hebt sich von klobigen Hüllen ab.",
+          "subtext2": "Unsere Folien sind mit jedem Zubehör, Hüllen und Wireless Charging kompatibel",
+          "subtext2_background": "#ffffff",
+          "subtext2_color": "#000000",
+          "button_label": "Jetzt Konfigurieren"
+        }
+      },
+      "entdecken-icons-2": {
+        "type": "entdecken-icons-2",
+        "blocks": {
+          "1595593370024": {
+            "type": "icon-image",
+            "settings": {
+              "icon_url": "shopify:\/\/shop_images\/iconsV2-05.png",
+              "label_text": "Hochwertige Materialien"
+            }
+          },
+          "1595593393905": {
+            "type": "icon-image",
+            "settings": {
+              "icon_url": "shopify:\/\/shop_images\/iconsV2-03.png",
+              "label_text": "Schützt vor Kratzern"
+            }
+          },
+          "1595593415020": {
+            "type": "icon-image",
+            "settings": {
+              "icon_url": "shopify:\/\/shop_images\/iconsV2-01.png",
+              "label_text": "Leichte Installation"
+            }
+          },
+          "1595593431190": {
+            "type": "icon-image",
+            "settings": {
+              "icon_url": "shopify:\/\/shop_images\/iconsV2-02.png",
+              "label_text": "Rückstandslos entfernbar"
+            }
+          },
+          "1595593451549": {
+            "type": "icon-image",
+            "settings": {
+              "icon_url": "shopify:\/\/shop_images\/iconsV2-04.png",
+              "label_text": "Made in Germany"
+            }
+          },
+          "1595593468450": {
+            "type": "slider-item",
+            "settings": {
+              "image_url": "shopify:\/\/shop_images\/20200415-IMG_1629-1.jpg"
+            }
+          },
+          "1595593581319": {
+            "type": "slider-item",
+            "settings": {
+              "image_url": "shopify:\/\/shop_images\/IMG_8465-1.jpg"
+            }
+          },
+          "1595593700791": {
+            "type": "slider-item",
+            "settings": {
+              "image_url": "shopify:\/\/shop_images\/IMG_8378-Bearbeitet-1-3.jpg"
+            }
+          },
+          "1595593742469": {
+            "type": "slider-item",
+            "settings": {
+              "image_url": "shopify:\/\/shop_images\/IMG_8438-1-2.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1595593370024",
+          "1595593393905",
+          "1595593415020",
+          "1595593431190",
+          "1595593451549",
+          "1595593468450",
+          "1595593581319",
+          "1595593700791",
+          "1595593742469"
+        ],
+        "settings": {
+          "background_color": "#000000",
+          "section_title": "Style trifft auf Schutz",
+          "sub_title": "Unsere <span class=\"weight-2\">Folierungen<\/span>",
+          "button_label": "Jetzt Konfigurieren"
+        }
+      },
+      "entdecken-image-slider-2": {
+        "type": "entdecken-image-slider-2",
+        "settings": {
+          "background_color": "#3a3a3a"
+        }
+      },
+      "entdecken-image-text-2-2": {
+        "type": "entdecken-image-text-2-2",
+        "settings": {
+          "show_section": true,
+          "background_color": "",
+          "image_url": "shopify:\/\/shop_images\/logo.jpg",
+          "header_text": "Unsere Philosophie",
+          "subtext1": "Marmelade Cat steht für Individualität und Einzigartigkeit. Wir vereinigen eine Vielzahl an Designs mit der Qualität unserer Manufaktur in Frankfurt um ein unvergleichbares Ergebnis Für deine Geräte zu schaffen.",
+          "subtext2": "",
+          "subtext2_background": "",
+          "subtext2_color": "",
+          "button_label": "Mehr über uns"
+        }
+      },
+      "entdecken-footer-2": {
+        "type": "entdecken-footer-2",
+        "settings": {
+          "background_color": "#3c5189",
+          "section_title": "Möchtest du 10% Rabatt?",
+          "section_content": "Werde Teil unseres Newsletters und erhalte 10% Rabatt auf deine erste Bestellung. Außerdem hast du die Chance, jeden Monat Skins zu gewinnen und erfährst als erster von exklusiven Angeboten",
+          "section_footer": "Durch klicken auf „ABONNIEREN“ akzeptierst du unsere Datenschutzbestimmungen und abonnierst unseren Newsletter. Du kannst dich jederzeit wieder abmelden.",
+          "button_label": "ABONNIEREN"
+        }
+      },
+      "product-image-slider": {
+        "type": "product-image-slider",
+        "blocks": {
+          "1599745062283": {
+            "type": "slider-image",
+            "settings": {
+              "collection_handle": "iphone",
+              "image_url": "shopify:\/\/shop_images\/weisses_carbon.jpg"
+            }
+          },
+          "1600100325234": {
+            "type": "slider-image",
+            "settings": {
+              "collection_handle": "iphone",
+              "image_url": "shopify:\/\/shop_images\/schwarzes_camo_v2.jpg"
+            }
+          },
+          "1599745162921": {
+            "type": "slider-image",
+            "settings": {
+              "collection_handle": "iphone",
+              "image_url": "shopify:\/\/shop_images\/schwarzes_hive.jpg"
+            }
+          },
+          "1599745098280": {
+            "type": "slider-image",
+            "settings": {
+              "collection_handle": "iphone",
+              "image_url": "shopify:\/\/shop_images\/IMG_8378-Bearbeitet-1-3.jpg"
+            }
+          },
+          "1599745176664": {
+            "type": "slider-image",
+            "settings": {
+              "collection_handle": "iphone",
+              "image_url": "shopify:\/\/shop_images\/image1_de4df0fd-99ba-4838-9be2-6fba0d3fb823.jpg"
+            }
+          },
+          "1600275948682": {
+            "type": "slider-image",
+            "settings": {
+              "collection_handle": "ipad",
+              "image_url": "shopify:\/\/shop_images\/flying_hive_iphone_ipad_Kopie.jpg"
+            }
+          },
+          "1600276184131": {
+            "type": "slider-image",
+            "settings": {
+              "collection_handle": "ipad",
+              "image_url": "shopify:\/\/shop_images\/ipad_honeycomb.jpg"
+            }
+          },
+          "1600278417770": {
+            "type": "slider-image",
+            "settings": {
+              "collection_handle": "ipad",
+              "image_url": "shopify:\/\/shop_images\/ipad_pro_silbernes_carbon_klein.jpg"
+            }
+          },
+          "1600278535219": {
+            "type": "slider-image",
+            "settings": {
+              "collection_handle": "ipad",
+              "image_url": "shopify:\/\/shop_images\/iphone_ipad_camo_klein.jpg"
+            }
+          },
+          "1600621077126": {
+            "type": "slider-image",
+            "settings": {
+              "collection_handle": "airpods",
+              "image_url": "shopify:\/\/shop_images\/airpods-pro-fly-klein.jpg"
+            }
+          },
+          "1600696236061": {
+            "type": "slider-image",
+            "settings": {
+              "collection_handle": "macbook",
+              "image_url": "shopify:\/\/shop_images\/IMG_9212_v3_Kopie.jpg"
+            }
+          },
+          "1600696294535": {
+            "type": "slider-image",
+            "settings": {
+              "collection_handle": "macbook",
+              "image_url": "shopify:\/\/shop_images\/macbook_weisses_carbon_v2.jpg"
+            }
+          },
+          "1600696368747": {
+            "type": "slider-image",
+            "settings": {
+              "collection_handle": "macbook",
+              "image_url": "shopify:\/\/shop_images\/20190131-IMG_3678_Kopie.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1599745062283",
+          "1600100325234",
+          "1599745162921",
+          "1599745098280",
+          "1599745176664",
+          "1600275948682",
+          "1600276184131",
+          "1600278417770",
+          "1600278535219",
+          "1600621077126",
+          "1600696236061",
+          "1600696294535",
+          "1600696368747"
+        ],
+        "settings": {}
+      },
+      "product-image-text": {
+        "type": "product-image-text",
+        "blocks": {
+          "1599804443807": {
+            "type": "image",
+            "settings": {
+              "collection_handle": "iphone",
+              "image": "shopify:\/\/shop_images\/image1_de4df0fd-99ba-4838-9be2-6fba0d3fb823.jpg",
+              "title": "Schützt vor Kratzern, wirklich.",
+              "text": "<p>Die hauchd&uuml;nne Folie sorgt daf&uuml;r, dass dein iPhone im Alltag bestens gesch&uuml;tzt ist.&nbsp;Die Zeiten von Kratzern durch Staub- und Sandk&ouml;rner sind endlich vorbei.<\/p>"
+            }
+          },
+          "1599804491723": {
+            "type": "image",
+            "settings": {
+              "collection_handle": "iphone",
+              "image": "shopify:\/\/shop_images\/detail_v2.jpg",
+              "title": "Nur der beste Shit",
+              "text": "<p>F&uuml;r dein&nbsp;iPhone ist das Beste gerade gut genug. Daher bestehen unsere Skins nur aus den besten Materialien. Sie sehen mega aus, f&uuml;hlen sich nice and und halten lange. Was willste mehr?<\/p>"
+            }
+          },
+          "1599804528808": {
+            "type": "image",
+            "settings": {
+              "collection_handle": "iphone",
+              "image": "shopify:\/\/shop_images\/installationsgarantie.png",
+              "title": "Die Installationsgarantie",
+              "text": "<p>Wir sind uns sehr sicher, dass du die Installation leicht schaffen wirst. Unsere Videos erkl&auml;ren den Prozess bestens. Sollte dir das Aufbringen dennoch Probleme bereiten, melde dich bei uns, wir helfen dir gerne weiter.<\/p>\n<p><\/p>\n<p>Und falls die Folie bei der Installation kaputt geht, bekommst du von uns <strong>kostenlos<\/strong> Ersatz zugeschickt. Unser Wort drauf.<\/p>\n<p><\/p>\n<p><a href=\"\/pages\/die-installationsgarantie\" title=\"Die Installationsgarantie\">Mehr Informationen&nbsp;und Bedingungen anzeigen<\/a><\/p>"
+            }
+          },
+          "1600106014755": {
+            "type": "image",
+            "settings": {
+              "collection_handle": "macbook",
+              "image": "shopify:\/\/shop_images\/installationsgarantie.png",
+              "title": "Die Installationsgarantie",
+              "text": "<p>Wir sind uns sehr sicher, dass du die Installation leicht schaffen wirst. Unsere Videos erkl&auml;ren den Prozess bestens. Sollte dir das Aufbringen dennoch Probleme bereiten, melde dich bei uns, wir helfen dir gerne weiter.<\/p>\n<p><\/p>\n<p>Und falls die Folie bei der Installation kaputt geht, bekommst du von uns <strong>kostenlos<\/strong> Ersatz zugeschickt. Unser Wort drauf.<\/p>\n<p><\/p>\n<p><a href=\"\/pages\/die-installationsgarantie\" title=\"Die Installationsgarantie\">Mehr Informationen&nbsp;und Bedingungen anzeigen<\/a><\/p>"
+            }
+          },
+          "1600106084282": {
+            "type": "image",
+            "settings": {
+              "collection_handle": "airpods",
+              "image": "shopify:\/\/shop_images\/installationsgarantie.png",
+              "title": "Die Installationsgarantie",
+              "text": "<p>Wir sind uns sehr sicher, dass du die Installation leicht schaffen wirst. Unsere Videos erkl&auml;ren den Prozess bestens. Sollte dir das Aufbringen dennoch Probleme bereiten, melde dich bei uns, wir helfen dir gerne weiter.<\/p>\n<p><\/p>\n<p>Und falls die Folie bei der Installation kaputt geht, bekommst du von uns <strong>kostenlos<\/strong> Ersatz zugeschickt. Unser Wort drauf.<\/p>\n<p><\/p>\n<p><a href=\"\/pages\/die-installationsgarantie\" title=\"Die Installationsgarantie\">Mehr Informationen&nbsp;und Bedingungen anzeigen<\/a><\/p>"
+            }
+          },
+          "1600106100789": {
+            "type": "image",
+            "settings": {
+              "collection_handle": "ipad",
+              "image": "shopify:\/\/shop_images\/installationsgarantie.png",
+              "title": "Die Installationsgarantie",
+              "text": "<p>Wir sind uns sehr sicher, dass du die Installation leicht schaffen wirst. Unsere Videos erkl&auml;ren den Prozess bestens. Sollte dir das Aufbringen dennoch Probleme bereiten, melde dich bei uns, wir helfen dir gerne weiter.<\/p>\n<p><\/p>\n<p>Und falls die Folie bei der Installation kaputt geht, bekommst du von uns <strong>kostenlos<\/strong> Ersatz zugeschickt. Unser Wort drauf.<\/p>\n<p><\/p>\n<p><a href=\"\/pages\/die-installationsgarantie\" title=\"Die Installationsgarantie\">Mehr Informationen&nbsp;und Bedingungen anzeigen<\/a><\/p>"
+            }
+          },
+          "1600107461524": {
+            "type": "image",
+            "settings": {
+              "collection_handle": "apple-watch",
+              "image": "shopify:\/\/shop_images\/installationsgarantie.png",
+              "title": "Die Installationsgarantie",
+              "text": "<p>Wir sind uns sehr sicher, dass du die Installation leicht schaffen wirst. Unsere Videos erkl&auml;ren den Prozess bestens. Sollte dir das Aufbringen dennoch Probleme bereiten, melde dich bei uns, wir helfen dir gerne weiter.<\/p>\n<p><\/p>\n<p>Und falls die Folie bei der Installation kaputt geht, bekommst du von uns <strong>kostenlos<\/strong> Ersatz zugeschickt. Unser Wort drauf.<\/p>\n<p><\/p>\n<p><a href=\"\/pages\/die-installationsgarantie\" title=\"Die Installationsgarantie\">Mehr Informationen&nbsp;und Bedingungen anzeigen<\/a><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1599804443807",
+          "1599804491723",
+          "1599804528808",
+          "1600106014755",
+          "1600106084282",
+          "1600106100789",
+          "1600107461524"
+        ],
+        "settings": {}
+      },
+      "product-image-text-2": {
+        "type": "product-image-text-2",
+        "blocks": {
+          "1599810541322": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/logo.jpg",
+              "title": "Wer wir überhaupt sind",
+              "text": "<p>Zusammen mit meinem Bruder und meinem Vater entwickeln wir seit 2018 Produkte, die daf&uuml;r sorgen das du weniger mit dir rumschleppst und dabei besser aussiehst.<\/p>\n<p>Wir m&ouml;chten, dass du dich als unser Kunde wie ein Teil unserer Familie f&uuml;hlst.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1599810541322"
+        ],
+        "settings": {}
       }
     },
     "content_for_index": [
@@ -5666,7 +6275,6 @@
       "1558766962557",
       "1558766746631",
       "1559219466478",
-      "1588331480351",
       "1559223516905",
       "1559225366439",
       "1560267901102",

@@ -520,7 +520,7 @@ selectCallback = function(variant, selector) {
     } else {
       $('.current_price', $product).removeClass('sold_out').html({{ settings.free_price_text | json }});
     }
-    $('.add_to_cart', $product).removeClass('disabled').removeAttr('disabled').find('span').text($('.add_to_cart', $product).data('label'));
+    // $('.add_to_cart', $product).removeClass('disabled').removeAttr('disabled').find('span').text($('.add_to_cart', $product).data('label'));
     $('.shopify-payment-button', $product).show();
     $notify_form.hide();
     $notifyFormInputs.empty();
@@ -533,7 +533,7 @@ selectCallback = function(variant, selector) {
     $('.items_left', $product).text('');
     $('.quantity', $product).removeAttr('max');
     $('.sold_out', $product).text(message);
-    $('.add_to_cart', $product).addClass('disabled').attr('disabled', 'disabled').find('span').text(message);
+    // $('.add_to_cart', $product).addClass('disabled').attr('disabled', 'disabled').find('span').text(message);
     $('.shopify-payment-button', $product).hide();
     $notify_form.hide();
     $notifyFormInputs.empty();

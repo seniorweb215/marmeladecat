@@ -742,7 +742,7 @@ $(function() {
     });
 
     $(document).on('click', '.crosssell-button-3', function() {
-      location.href = '/';
+      location.href = '/pages/waehle-dein-geraet';
     });
 
     function toggleCrosssellAnimation(cart) {
@@ -823,12 +823,12 @@ $(function() {
       var freeShippingAmount = '{{ settings.freeshipping_amount}}';
 
       if(totalPrice >= freeShippingAmount) {
-        $(".amount-message").html("freigeschaltet");
+        $(".amount-message").html("{{'layout.crosssell.unlocked'| t }}");
         $(".progress").css("width", "100%");
         $(".js-cart_shipping .right").html("{{ 'layout.general.shipping_free' | t }}");
       } else {
         var restAmount = freeShippingAmount - totalPrice;
-        $(".amount-message").html("freigeschaltet in " + getAmountText(restAmount * 100));
+        $(".amount-message").html("{{'layout.crosssell.unlocked_in'| t }}" + getAmountText(restAmount * 100));
         $(".progress").css("width", (totalPrice / freeShippingAmount * 100) + "%");
         $(".js-cart_shipping .right").html("{{ 'layout.general.shipping_checkout' | t }}");
       }

@@ -1,15 +1,17 @@
 {%- if rootTemplate == '404' -%}
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var formData = new FormData();
+    window.PSEO_LICENSED_TO = '{{- licensedTo-}}';
+    window.PSEO_APP_PROXY_PATH = '{{- appProxyPath -}}';
+    (function() {
+      var loadScript = function(url) {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
 
-      formData.set('user_id', '{{ licensedTo }}');
-      formData.set('url', window.location.href);
+        script.src = url;
+        document.getElementsByTagName("head")[0].appendChild(script);
+      }
 
-      fetch('{{ apiUrl | append: '/broken_links' }}', {
-        method: 'POST',
-        body: formData
-      });
-    });
+      loadScript('{{- appProxyPath | append: '/pluginseo_404.js' -}}');
+    })()
   </script>
 {%- endif -%}

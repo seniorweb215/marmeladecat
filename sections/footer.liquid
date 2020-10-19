@@ -127,7 +127,6 @@
                 </div>
               {% endif %}
             </div>
-
           {% elsif block.type == 'html' %}
             {% comment %}@TODO - Add HTML section for maps, widgets, embedding, etc{% endcomment %}
 
@@ -144,7 +143,6 @@
               {% include 'social-icons' %}
             </div>
           {% endif %}
-
         </div>
         {% if forloop.last and social_icons %}
           <div class="footer-social-icons--mobile sixteen columns">
@@ -152,7 +150,8 @@
           </div>
         {% endif %}
       {% endfor %}
-
+<span class="ly-custom-1000"></span>
+    <span class="ly-custom-0"></span>
       <div class="sixteen columns row footer_credits">
         <p class="credits">
           &copy; {{ "now" | date: "%Y" }} {{ shop.name | link_to: '/' }}.

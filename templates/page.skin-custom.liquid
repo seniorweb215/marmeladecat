@@ -1,0 +1,96 @@
+<script>
+  function showiPhones() {
+    hideCat();
+    var x = document.getElementById("iphones");
+      x.style.display="block";
+  }
+function showMacBooks() {
+    var x = document.getElementById("macbooks");
+      x.style.display = "block";
+      hideCat();
+  }
+function showiPads() {
+    var x = document.getElementById("ipads");
+      x.style.display = "block";
+      hideCat();
+  }
+function showAirPods() {
+    var x = document.getElementById("airpods");
+      x.style.display = "block";
+      hideCat();
+  }
+function showAppleWatch() {
+    var x = document.getElementById("applewatch");
+      x.style.display = "block";
+      hideCat();
+  }
+function hideCat(){
+    var x = document.getElementById("chooseCat");
+    x.style.display = "none";
+    var y = document.getElementById("goBack");
+    y.style.display = "block";
+}
+function showAll(){
+    var y = document.getElementById("choose-main");
+    y.style.display = "block";
+    var x = document.getElementById("choose-button-main");
+    x.style.display = "none";
+}
+function showCat(){
+    document.getElementById("chooseCat").style.display = "block";
+    document.getElementById("iphones").style.display = "none";
+    document.getElementById("goBack").style.display = "none"
+    document.getElementById("macbooks").style.display="none";
+    document.getElementById("ipads").style.display="none";
+    document.getElementById("airpods").style.display="none";
+    document.getElementById("applewatch").style.display="none";
+}
+</script>
+<style>
+#box-choose button {
+background-color: black;
+    border: solid 1px;
+    color: white;
+    height: 25%;
+    width: 40%;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 10px;
+}
+#iphones, #macbooks, #ipads, #airpods, #applewatch, #goBack, #choose-main {
+    display: none;
+}
+#chooseCat img{
+    max-width: 20%;
+    height: auto;
+}
+#goBack button {
+  width: 200px;
+}
+#choose-button-main button{
+    width: 100%;
+    margin: auto;
+color: white;
+    border: solid 1px;
+background-color: black;
+}
+#box-choose {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    align-content: center;
+    flex-direction: column;
+}
+</style>
+<a name="pagecontent" id="pagecontent"></a>
+
+<div class="sixteen columns page clearfix">
+  <div class="feature_divider"></div>
+
+  <div>
+    {% include 'page-multi-column', content: page.content %}
+  </div>
+</div>
+

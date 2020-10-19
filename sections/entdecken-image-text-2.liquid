@@ -1,0 +1,190 @@
+{% if section.settings.show_section == true %}
+<section class="entdecken-image-text-2" data-section-id="{{ section.id }}">
+    <div class="container">
+        <div class="image-block">
+            <img src="{{section.settings.image_url | img_url : '1600x1600'}}" alt="section-image" />
+        </div>
+        <div class="section-content">
+            <div class="text-block">
+                <h5>{{section.settings.header_text}}</h5>
+                <span class="subtext-1">{{section.settings.subtext1}}</span>
+                {% if section.settings.subtext2 != blank %}
+                    <span class="subtext-2">{{section.settings.subtext2}}</span>
+                {% endif %}
+            </div>
+            <div class="section-action">
+                <a class="button" href="/pages/uber-uns">{{section.settings.button_label}}</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<style>
+    {% if section.settings.show_section == true %}
+    @media(max-width: 991px) {
+        section.entdecken-image-slider {
+            padding-bottom: calc(50vw - 50px);
+        }
+    }
+    {% endif %}
+    [data-section-id="{{ section.id }}"] {
+        background-color: {{ section.settings.background_color }};
+        margin-top: calc(10vw + 50px);
+        position: relative;
+    }
+
+    section[data-section-id="{{ section.id }}"]::before {
+        content: "";
+        width: 100%;
+        height: 20vw;
+        background-color: {{ section.settings.background_color }};
+        display: inline;
+        position: absolute;
+        transform: skewY(-11deg);
+        top: -10vw;
+    }
+
+    section[data-section-id="{{ section.id }}"]::after {
+        content: "";
+        width: 100%;
+        height: 20vw;
+        background-color: {{ section.settings.background_color }};
+        display: inline;
+        position: absolute;
+        transform: skewY(-11deg);
+        bottom: -10vw;
+        z-index: -1;
+    }
+
+    [data-section-id="{{ section.id }}"] .image-block {
+        margin-top: -50vw;
+    }
+
+    [data-section-id="{{ section.id }}"] .image-block img {
+        width: calc(100% - 100px);
+        display: block;
+        margin: 0 auto;
+        border: 3px solid white;
+    }
+
+    @media(max-width: 768px) {
+        [data-section-id="{{ section.id }}"] .image-block img {
+            width: calc(100% + 20px) !important;
+            margin: 0 0 0 -10px !important;
+        }
+    }
+
+    [data-section-id="{{ section.id }}"] h5 {
+        font-weight: 900;
+        margin-top: 15px;
+        letter-spacing: normal;
+    }
+
+    [data-section-id="{{ section.id }}"] .text-block .subtext-1 {
+        display: block;
+        font-size: 15px;
+    }
+
+    [data-section-id="{{ section.id }}"] .text-block .subtext-2 {
+        display: inline-block;
+        font-size: 15px;
+        font-style: italic;
+        padding: 6px;
+        margin-top: 10px;
+        {% if section.settings.subtext2_background != blank %}
+            background-color: {{ section.settings.subtext2_background }};
+        {% else %}
+            background-color: black;
+        {% endif %}
+        {% if section.settings.subtext2_color != blank %}
+            color: {{ section.settings.subtext2_color }};
+        {% else %}
+            color: white;
+        {% endif %}
+    }
+
+    [data-section-id="{{ section.id }}"] .section-action {
+        margin-top: 20px;
+    }
+
+    [data-section-id="{{ section.id }}"] .section-action a {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    @media(min-width: 992px) {	
+        [data-section-id="{{ section.id }}"] {	
+            margin-top: 5vw;	
+        }	
+        section[data-section-id="{{ section.id }}"]::before {	
+            transform: skewY(-5deg);	
+            height: 10vw;	
+            top: -5vw;	
+        }	
+        [data-section-id="{{ section.id }}"] > .container {	
+            display: flex;	
+        }	
+        [data-section-id="{{ section.id }}"] .image-block {	
+            margin-top: 0;	
+            max-width: 50%;	
+        }	
+    }
+</style>
+
+{% schema %}
+{
+    "name": "Image and Text",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "show_section",
+            "label": "Show Section",
+            "default": true
+        },
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background Color"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_url",
+            "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "header_text",
+            "label": "Heading",
+            "default": "Unsere Philosophie"
+        },
+        {
+            "type": "textarea",
+            "id": "subtext1",
+            "label": "Content 1",
+            "default": "Marmelade Cat steht für Individualität und Einzigartigkeit. Wir vereinigen eine Vielzahl an Designs mit der Qualität unserer Manufaktur in Frankfurt um ein unvergleichbares Ergebnis Für deine Geräte zu schaffen."
+        },
+        {
+            "type": "textarea",
+            "id": "subtext2",
+            "label": "Content 2"
+        },
+        {
+            "type": "color",
+            "id": "subtext2_background",
+            "label": "Background Color"
+        },
+        {
+            "type": "color",
+            "id": "subtext2_color",
+            "label": "Font Color"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button Label",
+            "default": "Mehr über uns"
+        }
+    ]
+}
+{% endschema %}

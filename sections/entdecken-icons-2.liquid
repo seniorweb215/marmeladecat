@@ -1,0 +1,262 @@
+<section class="entdecken-icons" data-section-id="{{ section.id }}">
+    <div class="container">
+        <div>
+            <h2 class="section-title">{{ section.settings.section_title }}</h2>
+            <span class="section-subtitle">{{ section.settings.sub_title }}</span>
+            <div class="blocks">
+                {% for block in section.blocks %}
+                    {% if block.type == 'icon-image' %}
+                    <div class="icon-block">
+                        <img src="{{ block.settings.icon_url | img_url }}" alt="block-icon" />
+                        <span class="block-text">{{ block.settings.label_text }}</span>
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+            <div class="section-action">
+                <a class="button">{{section.settings.button_label}}</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="image-slider carousel" data-slick='{"slidesToShow": 1,"slidesToScroll": 1, "infinite": true, "dots": true}'>
+            {% for block in section.blocks %}
+                {% if block.type == 'slider-item' %}
+                <div class="slider-item">
+                    <img src="{{ block.settings.image_url | img_url : '1600x1600' }}" alt="slider-image">
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<style>
+    [data-section-id="{{ section.id }}"] {
+        background-color: {{ section.settings.background_color }};
+        position: relative;
+        margin-top: 10vw;
+    }
+
+    [data-section-id="{{ section.id }}"] .section-title {
+        font-weight: 900;
+        letter-spacing: normal;
+        margin: 0;
+    }
+
+    [data-section-id="{{ section.id }}"] .section-subtitle {
+        font-weight: 100;
+        font-size: 20px;
+    }
+
+    [data-section-id="{{ section.id }}"] .section-subtitle .weight-2 {
+        font-weight: 700;
+    }
+
+    [data-section-id="{{ section.id }}"] .blocks {
+        margin-top: 10px;
+    }
+
+    [data-section-id="{{ section.id }}"] .blocks .icon-block {
+        padding: 2px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    [data-section-id="{{ section.id }}"] .blocks .icon-block img {
+        width: 16px;
+        height: 16px;
+    }
+
+    [data-section-id="{{ section.id }}"] .blocks .icon-block span {
+        line-height: 1.9;
+        padding-left: 10px;
+    }
+
+    [data-section-id="{{ section.id }}"] .section-action {
+        margin-top: 20px;
+    }
+
+    [data-section-id="{{ section.id }}"] .section-action a {
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    section[data-section-id="{{ section.id }}"]::before {
+        content: "";
+        width: 100%;
+        height: 20vw;
+        background-color: {{ section.settings.background_color }};
+        display: inline;
+        position: absolute;
+        transform: skewY(-11deg);
+        top: -10vw;
+    }
+
+    section[data-section-id="{{ section.id }}"]::after {
+        content: "";
+        width: 100%;
+        height: 20vw;
+        background-color: {{ section.settings.background_color }};
+        display: inline;
+        position: absolute;
+        transform: skewY(-11deg);
+        bottom: -10vw;
+        z-index: -1;
+    }
+
+    [data-section-id="{{ section.id }}"] .image-slider {
+        width: calc(100% - 100px);
+        margin: 0 auto -50vw;
+        z-index: 1;
+    }
+
+    @media(max-width: 768px) {
+        [data-section-id="{{ section.id }}"] .image-slider {
+            width: calc(100% + 20px) !important;
+            margin-left: -10px !important;
+        }
+    }
+
+    [data-section-id="{{ section.id }}"] .image-slider .slider-item {
+        text-align: center;
+    }
+
+    [data-section-id="{{ section.id }}"] .image-slider .slider-item img {
+        width: 100%;
+        border: 3px solid white;
+    }
+
+    [data-section-id="{{ section.id }}"] button.slick-next {
+        right: 25px !important;
+    }
+
+    [data-section-id="{{ section.id }}"] button.slick-next::before {
+        opacity: 1;
+        content: "";
+        width: 20px;
+        height: 20px;
+        border: 4px solid;
+        border-color: transparent white white transparent;
+        display: block;
+        transform: rotate(-45deg);
+    }
+
+    [data-section-id="{{ section.id }}"] button.slick-prev {
+        left: 25px !important;
+        z-index: 1;
+    }
+
+    [data-section-id="{{ section.id }}"] button.slick-prev::before {
+        opacity: 1;
+        content: "";
+        width: 20px;
+        height: 20px;
+        border: 4px solid;
+        border-color: transparent white white transparent;
+        display: block;
+        transform: rotate(135deg);
+    }
+
+    [data-section-id="{{ section.id }}"] .slick-dots {
+        bottom: -45px;
+    }
+
+    [data-section-id="{{ section.id }}"] .slick-dots li button:before {
+        font-size: 13px;
+        color: white;
+    }
+
+    @media(min-width: 992px) {
+        [data-section-id="{{ section.id }}"] {
+            margin-top: 5vw;
+            display: flex;
+            align-items: center;
+        }
+
+        section[data-section-id="{{ section.id }}"]::before {
+            content: "";
+            width: 100%;
+            height: 10vw;
+            background-color: {{ section.settings.background_color }};
+            display: inline;
+            position: absolute;
+            transform: skewY(-5deg);
+            top: -5vw;
+        }
+
+        [data-section-id="{{ section.id }}"] > div {
+            flex: 0 0 40%;
+            max-width: 40%;
+        }
+
+        [data-section-id="{{ section.id }}"] .image-slider {
+            margin: 0 auto;
+        }
+
+        [data-section-id="{{ section.id }}"] > .container:nth-child(1) > div {
+            max-width: 390px;
+            margin: 0 auto;
+        }
+    }
+</style>
+
+{% schema %}
+{
+    "name": "Icon Blocks",
+    "settings": [
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background Color"
+        },
+        {
+            "type": "text",
+            "id": "section_title",
+            "label": "Section Title",
+            "default": "Style trifft auf Schutz"
+        },
+        {
+            "type": "text",
+            "id": "sub_title",
+            "label": "Section Sub Title",
+            "default": "Unsere <span class='weight-2'>Folierungen</span>"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button Label",
+            "default": "Jetzt Konfigurieren"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "icon-image",
+            "name": "Icon and Text",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "icon_url",
+                    "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "label_text",
+                    "label": "Label"
+                }
+            ]
+        },
+        {
+            "type": "slider-item",
+            "name": "Slider Item",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image_url",
+                    "label": "Image"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

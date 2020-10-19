@@ -1,0 +1,17 @@
+.container.main.content {
+    width: 100% !important;
+    max-width: unset !important;
+    & * {
+        font-family: aktiv-grotesk !important;
+    }
+
+    & .container {
+        width: calc(90% - 20px) !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container .container {
+        width: calc(90% + 20px) !important;
+    }
+}

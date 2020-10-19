@@ -118,24 +118,21 @@
 	{%- endif -%}
   {%- endfor -%}
 
-  {%- for custom in shop.metafields.custom -%}
-	{%- assign src = custom | last -%}
-	{%- assign key = custom | first -%}
-	{%- assign key = key | split: "ly" | last -%}
-	{%- assign translation_namespace = language | append: "cu" -%}
-	{%- assign translation_key = "id" | append: key -%}
-	{%- if shop.metafields[translation_namespace][translation_key] -%}
-	  {%- assign translation = shop.metafields[translation_namespace][translation_key] -%}
-	  {%- assign src1 = '"' | append: src | append: '"' -%}
-	  {%- assign dst1 = '"' | append: translation | append: '"' -%}
-	  {%- assign src2 = "'" | append: src | append: "'" -%}
-	  {%- assign dst2 = "'" | append: translation | append: "'" -%}
-	  {%- assign src3 = ">" | append: src | append: "<" -%}
-	  {%- assign dst3 = ">" | append: translation | append: "<" -%}
-	  {%- assign content = content | replace: src1, dst1 -%}
-	  {%- assign content = content | replace: src2, dst2 -%}
-	  {%- assign content = content | replace: src3, dst3 -%}
-	{%- endif-%}
+  {%- capture customs -%}{%- render 'ly-get-customs' -%}{%- endcapture -%}
+  {%- assign customs = customs | split : '[ly_custom]' -%}
+  {%- for custom in customs -%}
+    {%- assign used_custom = custom | split: '[ly_custom_split]' -%}
+    {%- assign src = used_custom | first -%}
+    {%- assign dst = used_custom | last -%}
+	{%- assign src1 = '"' | append: src | append: '"' -%}
+	{%- assign dst1 = '"' | append: dst | append: '"' -%}
+	{%- assign src2 = "'" | append: src | append: "'" -%}
+	{%- assign dst2 = "'" | append: dst | append: "'" -%}
+	{%- assign src3 = ">" | append: src | append: "<" -%}
+	{%- assign dst3 = ">" | append: dst | append: "<" -%}
+	{%- assign content = content | replace: src1, dst1 -%}
+	{%- assign content = content | replace: src2, dst2 -%}
+	{%- assign content = content | replace: src3, dst3 -%}
   {%- endfor -%}
 
   {%- assign tag_translation_namespace = "ta" | append: language -%}

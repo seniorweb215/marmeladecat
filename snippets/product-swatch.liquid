@@ -8,6 +8,8 @@
 {% assign found_option = false %}
 {% assign is_color = false %}
 {% assign option_index = 0 %}
+{% assign color_array = sortColors | split: "," %}
+{% assign variant_array = variantColors | split: "|||" %}
 
 {% for option in product.options %}
   {% if option == swatch %}
@@ -22,33 +24,102 @@
 
 <div class="swatch clearfix" data-option-index="{{ option_index }}">
   <div class="option_title">{{ swatch }}</div>
-  {% assign values = '' %}
-  {% for variant in product.variants %}
-    {% assign value = variant.options[option_index] %}
-    {% unless values contains value %}
-      {% assign values = values | join: ',' %}
-      {% assign values = values | append: ',' | append: value %}
-      {% assign values = values | split: ',' %}
+  {% if is_color %}
+    <div class="swatch-items">
+  {% endif %}
+  {% assign logo_values = '' %}
+  {% for color_item in color_array %}
+    {% assign color_values = '' %}
+    {% for variant in product.variants %}
+      {% assign value = variant.options[option_index] %}
+      {% unless color_values contains value or logo_values contains value %}
+        {% if is_color and color_item == value %}
+          {% assign color_values = color_values | join: ',' %}
+          {% assign color_values = color_values | append: ',' | append: value %}
+          {% assign color_values = color_values | split: ',' %}
+          <input id="swatch-{{ option_index }}-{{ value | handle }}-{{ product.id }}{% if section.id %}-{{ section.id }}{% endif %}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}"{% if forloop.first %} checked{% endif %} />
+          <div data-value="{{ value | escape }}" data-id="{{ variant.id }}" class="swatch-element color {{ value | handle }}-swatch {% if variant.available %}available{% else %}soldout{% endif %}">
+              <div class="tooltip">{{ value }}</div>
+              <label {% if variant.featured_image %}
+                        data-image="{{ variant.featured_image | product_img_url: '600x' }}"
+                      {% endif %}
+                      for="swatch-{{ option_index }}-{{ value | handle }}-{{ product.id }}{% if section.id %}-{{ section.id }}{% endif %}" style="background-image: url({{ value | handle | append: '.' | append: file_extension | asset_img_url: '50x' | prepend: 'https:' }}); background-color: {{ value | split: ' ' | last | handle }};">
+                <img class="crossed-out" src="{{ 'soldout.png' | asset_url }}"/>
+              </label>
+          </div>
+        {% elsif is_color == false %}
+        {{color_item}}
+          <div class="logo-type-select">
+            <input id="swatch-{{ option_index }}-{{ value | handle }}-{{ product.id }}{% if section.id %}-{{ section.id }}{% endif %}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}"{% if forloop.first %} checked{% endif %} />
+            <span class="radiobtn"></span>
+            <div data-value="{{ value | escape }}" data-id="{{ variant.id }}" class="swatch-element {{ value | handle }}-swatch {% if variant.available %}available{% else %}soldout{% endif %}">
+              <label for="swatch-{{ option_index }}-{{ value | handle }}-{{ product.id }}{% if section.id %}-{{ section.id }}{% endif %}" class="logo-type-label">
+                  {{ value }}
+                  <img class="crossed-out" src="{{ 'soldout.png' | asset_url }}"/>
+              </label>
+            </div>
+          </div>
+        {% endif %}
+      {% endunless %}
+    {% endfor %}
+  {% endfor %}
+  {% if is_color %}
+    </div>
+  {% endif %}
+</div>
 
-      <input id="swatch-{{ option_index }}-{{ value | handle }}-{{ product.id }}{% if section.id %}-{{ section.id }}{% endif %}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}"{% if forloop.first %} checked{% endif %} />
-      <div data-value="{{ value | escape }}" data-id="{{ variant.id }}" class="swatch-element {% if is_color %}color {% endif %}{{ value | handle }}-swatch {% if variant.available %}available{% else %}soldout{% endif %}">
-        {% if is_color %}
-          <div class="tooltip">{{ value }}</div>
+{% if is_color %}
+<div class="materials" style="display: none;">
+  
+  {% assign item_count = 0 %}
+  {% for variant_item in variant_array %}
+    {% assign group_values = '' %}
+    {% assign temp = variant_item | split: ":" %}
+    {% assign title = temp[0] %}
+    {% assign variant_list = temp[1] | split: "," %}
+
+    <div class="swatch clearfix">
+      {% assign option_title_flag = false %}
+      {% for variant in product.variants %}
+        {% assign value = variant.options[option_index] %}
+        {% if variant_list contains value %}
+          {% unless group_values contains value %}
+            {% assign group_values = group_values | join: ',' %}
+            {% assign group_values = group_values | append: ',' | append: value %}
+            {% assign group_values = group_values | split: ',' %}
+            
+            {% if option_title_flag == false %}
+              {% assign item_count = item_count | plus: 1 %}
+              <div class="option_title">{{ title }}</div>
+              {%comment%}
+              {% if item_count == 4 %}
+                {% break %}
+              {% endif %}
+              {%endcomment%}
+              
+              {% assign option_title_flag = true %}
+            {% endif %}
+            <input id="m-swatch-{{ option_index }}-{{ value | handle }}-{{ product.id }}{% if section.id %}-{{ section.id }}{% endif %}" type="radio" name="option-{{ option_index }}" value="{{ value | escape }}"{% if forloop.first %} checked{% endif %} />
+            <div data-value="{{ value | escape }}" data-id="{{ variant.id }}" class="swatch-element color {{ value | handle }}-swatch {% if variant.available %}available{% else %}soldout{% endif %}">
+              <div class="tooltip">{{ value }}</div>
+              <label {% if variant.featured_image %}
+                        data-image="{{ variant.featured_image | product_img_url: '600x' }}"
+                      {% endif %}
+                      for="swatch-{{ option_index }}-{{ value | handle }}-{{ product.id }}{% if section.id %}-{{ section.id }}{% endif %}" style="background-image: url({{ value | handle | append: '.' | append: file_extension | asset_img_url: '50x' | prepend: 'https:' }}); background-color: {{ value | split: ' ' | last | handle }};">
+                <img class="crossed-out" src="{{ 'soldout.png' | asset_url }}"/>
+              </label>
+            </div>
+          {% endunless %}
         {% endif %}
-        {% if is_color %}
-          <label {% if variant.featured_image %}
-                    data-image="{{ variant.featured_image | product_img_url: '600x' }}"
-                  {% endif %}
-                  for="swatch-{{ option_index }}-{{ value | handle }}-{{ product.id }}{% if section.id %}-{{ section.id }}{% endif %}" style="background-image: url({{ value | handle | append: '.' | append: file_extension | asset_img_url: '50x' | prepend: 'https:' }}); background-color: {{ value | split: ' ' | last | handle }};">
-            <img class="crossed-out" src="{{ 'soldout.png' | asset_url }}"/>
-          </label>
-        {% else %}
-          <label for="swatch-{{ option_index }}-{{ value | handle }}-{{ product.id }}{% if section.id %}-{{ section.id }}{% endif %}">
-            {{ value }}
-            <img class="crossed-out" src="{{ 'soldout.png' | asset_url }}"/>
-          </label>
-        {% endif %}
+      {% endfor %}
+{% comment %}
+    {% if item_count == 4 %}
       </div>
-    {% endunless %}
+      {% break %}
+    {% endif %}
+{% endcomment %}
+    </div>
   {% endfor %}
 </div>
+<button class="all-material-toggle"><span class="btn-label">Alle Materialien zeigen</span><span class="right icon-down-arrow"></span></button>
+{% endif %}

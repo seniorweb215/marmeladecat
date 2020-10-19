@@ -1,58 +1,58 @@
 {% if product.title contains "AirPods Pro" %}
-<p><span style="color: #e91313;"> Wir empfehlen für AirPods einen helleren Skin zu wählen, da dieser beim Aufbringen leichte Fehler verzeiht. Bei dunklen Skins sind leichte Installationsfehler gut erkennbar. </span></p>
+<p><span style="color: #e91313;"> <ly-as-73155>Wir empfehlen für AirPods einen helleren Skin zu wählen, da dieser beim Aufbringen leichte Fehler verzeiht. Bei dunklen Skins sind leichte Installationsfehler gut erkennbar.</ly-as-73155> </span></p>
 {% endif %}
 <dl class="faqAccordion">
-<dt><button type="button" aria-controls="panel-01" aria-expanded="true">Funktionen</button></dt>
+<dt><button type="button" aria-controls="panel-01" aria-expanded="true"><ly-as-73156>Funktionen</ly-as-73156></button></dt>
 <dd id="panel-01" aria-hidden="false">
-<h2>Style</h2>
+<h2><ly-as-73157>Style</ly-as-73157></h2>
 <ul>
-<li>Individuell passend zu Deinem Style</li>
-<li>Verleiht 
-{% if product.title contains "iPhone" or product.title contains "iPad" or product.title contains "MacBook"%} deinem {{ product.title | remove: " Skins"}} 
-{% elsif product.title contains "AirPods" %} deinen {{ product.title | remove: " Skins" | remove:"Case" }}
-{% elsif product.title contains "Apple Watch" %} deiner {{ product.title | remove: " Skins" }}
+<li><ly-as-73158>Individuell passend zu Deinem Style</ly-as-73158></li>
+<li><ly-as-73159>Verleiht</ly-as-73159> 
+{% if product.title contains "iPhone" or product.title contains "iPad" or product.title contains "MacBook"%} {{ 'products.skin_description.deinem' | t }} {{ product.title | remove: " Skins"}} 
+{% elsif product.title contains "AirPods" %} {{ 'products.skin_description.deinen' | t }} {{ product.title | remove: " Skins" | remove:"Case" }}
+{% elsif product.title contains "Apple Watch" %} {{ 'products.skin_description.deiner' | t }} {{ product.title | remove: " Skins" }}
 {% endif %}
-das Design, das zu Dir passt</li>
+<ly-as-73160>das Design, das zu Dir passt</ly-as-73160></li>
 {% if product.title contains "iPhone"%}
-<li>Schluss mit unschönen Fingerabdrücken auf der Rückseite Deines {{ product.title | remove: " Skins"}}</li>
+<li>{{ 'products.skin_description.fingerabdruecke' | t }} {{ product.title | remove: " Skins"}}</li>
 {% endif %}
-<li>Einheitliche Optik von iPhone, iPad, MacBook, AirPods und Apple Watch durch gleiche Skins</li>
+<li><ly-as-73161>Einheitliche Optik von iPhone, iPad, MacBook, AirPods und Apple Watch durch gleiche Skins</ly-as-73161></li>
 </ul>
-<h2>Genauigkeit</h2>
+<h2><ly-as-73162>Genauigkeit</ly-as-73162></h2>
 <ul>
 {% if product.title contains "iPhone" or product.title contains "AirPods"%}
-<li>Griffige Haptik für mehr Halt</li>
+<li><ly-as-73163>Griffige Haptik für mehr Halt</ly-as-73163></li>
 {% endif %}
-<li>Extrem dünn und passgenau</li>
-<li>Ergonomie bleibt erhalten</li>
-<li>100% kompatibel mit Hüllen und anderem Zubehör</li>
+<li><ly-as-73164>Extrem dünn und passgenau</ly-as-73164></li>
+<li><ly-as-73165>Ergonomie bleibt erhalten</ly-as-73165></li>
+<li><ly-as-73166>100% kompatibel mit Hüllen und anderem Zubehör</ly-as-73166></li>
 </ul>
-<h2>Schutz</h2>
+<h2><ly-as-73167>Schutz</ly-as-73167></h2>
 <ul>
-<li>Idealer Schutz vor Kratzern</li>
+<li><ly-as-73168>Idealer Schutz vor Kratzern</ly-as-73168></li>
 {% if product.title contains "iPhone" or product.title contains "MacBook" or product.title contains "iPad" %}
-<li>Steigert den Wiederverkaufswert des {{ product.title | remove: " Skins"}}</li>
+<li>{{ 'products.skin_description.wiederverkauf1' | t }} {{ product.title | remove: " Skins"}}</li>
 {% else %}
-<li>Steigert den Wiederverkaufswert der {{ product.title | remove: " Skins"}}</li>
+<li>{{ 'products.skin_description.wiederverkauf1' | t }} {{ product.title | remove: " Skins"}}</li>
 {% endif %}
-<li>Leicht selbst aufzubringen und ohne Rückstände wieder entfernbar</li>
+<li><ly-as-73169>Leicht selbst aufzubringen und ohne Rückstände wieder entfernbar</ly-as-73169></li>
 </ul>
-<h2>Qualität</h2>
+<h2><ly-as-73170>Qualität</ly-as-73170></h2>
 <ul>
-<li>Frei von Blasenbildung durch High-End Folien mit Luftkanälen</li>
-<li>Alle Materialen von den Marktführern 3M und Orafol</li>
-<li>Made in Germany – In Deutschland gefertigt</li>
-<li>Schneller Versand garantiert</li>
+<li><ly-as-73171>Frei von Blasenbildung durch High-End Folien mit Luftkanälen</ly-as-73171></li>
+<li><ly-as-73172>Alle Materialen von den Marktführern 3M und Orafol</ly-as-73172></li>
+<li><ly-as-73173>Made in Germany – In Deutschland gefertigt</ly-as-73173></li>
+<li><ly-as-73174>Schneller Versand garantiert</ly-as-73174></li>
 </ul>
 </dd>
-<dt><button type="button" aria-controls="panel-01" aria-expanded="true">Lieferumfang</button></dt>
+<dt><button type="button" aria-controls="panel-01" aria-expanded="true"><ly-as-73175>Lieferumfang</ly-as-73175></button></dt>
 <dd id="panel-01" aria-hidden="false">
 <div style="text-align: left;">
-<p>Im Lieferumfang ist der präzise gefertigte <strong>Marmelade Cat Skin</strong>, ein <strong>Alkoholreinigungspad</strong> zum Reinigen 
-{% if product.title contains "iPhone" or product.title contains "iPad" or product.title contains "MacBook" %} deines {{ product.title | remove: " Skins"}}, 
-{% else %} deiner {{ product.title | remove: " Skins"}}, 
-{% endif %}ein trockenes <strong>Reinigungspad</strong> und ein <strong>Marmelade Cat Mikrofasertuch</strong>, um das perfekte Ergebnis zu erreichen. 
-Ergänzend zum Lieferumfang benötigst du nur noch einen Fön und natürlich das zu skinnende Device. Weitere Informationen zur Installation des Skins findest du im Reiter Anleitung.</p>
+<p><ly-as-73176>Im Lieferumfang ist der präzise gefertigte</ly-as-73176> <strong><ly-as-73177>Marmelade Cat Skin</ly-as-73177></strong><ly-as-73178>, ein</ly-as-73178> <strong><ly-as-73179>Alkoholreinigungspad</ly-as-73179></strong> <ly-as-73180>zum Reinigen</ly-as-73180> 
+{% if product.title contains "iPhone" or product.title contains "iPad" or product.title contains "MacBook" %} {{ 'products.skin_description.deines' | t }} {{ product.title | remove: " Skins"}}, 
+{% else %} {{ 'products.skin_description.deiner' | t }} {{ product.title | remove: " Skins"}}, 
+{% endif %}<ly-as-73181>ein trockenes</ly-as-73181> <strong><ly-as-73182>Reinigungspad</ly-as-73182></strong> <ly-as-73183>und ein</ly-as-73183> <strong><ly-as-73184>Marmelade Cat Mikrofasertuch</ly-as-73184></strong><ly-as-73185>, um das perfekte Ergebnis zu erreichen. 
+Ergänzend zum Lieferumfang benötigst du nur noch einen Fön und natürlich das zu skinnende Device. Weitere Informationen zur Installation des Skins findest du im Reiter Anleitung.</ly-as-73185></p>
 <br>
 {% if product.title contains "iPhone" %} <img alt="Lieferumfang" src="https://cdn.shopify.com/s/files/1/0031/3252/2611/files/lieferumfang-iphone-skin_480x480.jpg?v=1586597014" style="float: none;">
 {% elsif product.title contains "iPad" %} <img alt="Lieferumfang" src="https://cdn.shopify.com/s/files/1/0031/3252/2611/files/lieferumfang-iphone-skin_480x480.jpg?v=1586597014" style="float: none;">
@@ -65,78 +65,78 @@ Ergänzend zum Lieferumfang benötigst du nur noch einen Fön und natürlich das
 {% endif %}
 </div>
 </dd>
-<dt><button type="button" aria-controls="panel-01" aria-expanded="true">Anleitung</button></dt>
+<dt><button type="button" aria-controls="panel-01" aria-expanded="true"><ly-as-73186>Anleitung</ly-as-73186></button></dt>
 <dd id="panel-01" aria-hidden="false">
-{% if product.title contains "iPad" or product.title contains "MacBook" %}<p>Leider ist unsere Videoanleitung für die {% if product.title contains "iPad" %} iPads {% elsif product.title contains "MacBook" %} MacBooks {% endif %}noch nicht fertiggestellt. Wir arbeiten mit Hochdruck an der Fertigstellung und werden die Anleitung bald hier ergänzen. Die Installation ist aber relativ einfach. </p><p> Falls Du Fragen hast, stehen wir Dir gerne zur Verfügung. Nutze dafür einfach das <a href="https://marmeladecat.com/pages/kontakt" title="Kontaktformular">Kontaktformular</a> und wir melden uns schnellstmöglich bei Dir.</p>
+{% if product.title contains "iPad" or product.title contains "MacBook" %}<p><ly-as-73187>Leider ist unsere Videoanleitung für die</ly-as-73187> {% if product.title contains "iPad" %} <ly-as-73188>iPads </ly-as-73188>{% elsif product.title contains "MacBook" %} <ly-as-73189>MacBooks</ly-as-73189> {% endif %}<ly-as-73190>noch nicht fertiggestellt. Wir arbeiten mit Hochdruck an der Fertigstellung und werden die Anleitung bald hier ergänzen. Die Installation ist aber relativ einfach.</ly-as-73190> </p><p> <ly-as-73191>Falls Du Fragen hast, stehen wir Dir gerne zur Verfügung. Nutze dafür einfach das</ly-as-73191> <a href="https://marmeladecat.com/pages/kontakt" title="Kontaktformular"><ly-as-73192>Kontaktformular</ly-as-73192></a> <ly-as-73193>und wir melden uns schnellstmöglich bei Dir.</ly-as-73193></p>
 {% elsif product.title contains "AirPods" or product.title contains "Apple Watch" %}
-  <p>Eine vorläufige Installation-Anleitung ist bereits verfügbar. 
+  <p><ly-as-73194>Eine vorläufige Installation-Anleitung ist bereits verfügbar.</ly-as-73194> 
   {% if product.title contains "AirPods Pro" %} <a href="https://marmeladecat.com/pages/airpods-pro-skin-installation" title="AirPods Pro Installation-Anleitung">
   {% elsif product.title contains "Apple Watch" %} <a href="https://marmeladecat.com/pages/anleitung-apple-watch-marmelade-cat-skin-installation" title="Apple Watch Installation-Anleitung">
   {% else %} <a href="https://marmeladecat.com/pages/anleitung-airpod-skin-installation" title="AirPods Installation-Anleitung">
   {% endif %}
-  Hier gehts zur Anleitung.</a></p><p> Falls Du Fragen hast, stehen wir Dir gerne zur Verfügung. Nutze dafür einfach das <a href="https://marmeladecat.com/pages/kontakt" title="Kontaktformular">Kontaktformular</a> und wir melden uns schnellstmöglich bei Dir.</p>
+  <ly-as-73195>Hier gehts zur Anleitung.</ly-as-73195></a></p><p> <ly-as-73191>Falls Du Fragen hast, stehen wir Dir gerne zur Verfügung. Nutze dafür einfach das</ly-as-73191> <a href="https://marmeladecat.com/pages/kontakt" title="Kontaktformular"><ly-as-73192>Kontaktformular</ly-as-73192></a> <ly-as-73193>und wir melden uns schnellstmöglich bei Dir.</ly-as-73193></p>
   {% else %}
 <iframe src="https://www.youtube.com/embed/aJdEdey1dqI" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 {% endif %}
 </dd>
-<dt><button type="button" aria-controls="panel-01" aria-expanded="true">FAQ</button></dt>
+<dt><button type="button" aria-controls="panel-01" aria-expanded="true"><ly-as-73196>FAQ</ly-as-73196></button></dt>
 <dd id="panel-01" aria-hidden="false">
-  <h3>Was ist ein Skin?</h3>
-  <p>Ein Skin ist eine ultra passgenaue Folierung für dein Device. Es schützt dein Device vor Kratzern mit nur minimaler Veränderungen der Ergonomie. Du kannst zwischen einer Vielzahl von Designs wählen.</p>
+  <h3><ly-as-73197>Was ist ein Skin?</ly-as-73197></h3>
+  <p><ly-as-73198>Ein Skin ist eine ultra passgenaue Folierung für dein Device. Es schützt dein Device vor Kratzern mit nur minimaler Veränderungen der Ergonomie. Du kannst zwischen einer Vielzahl von Designs wählen.</ly-as-73198></p>
 <h3> 
-{% if product.title contains "iPhone" or product.title contains "iPad" or product.title contains "MacBook"%} Ist das {{ product.title | remove: " Skins"}}
-{% elsif product.title contains "Apple Watch" %} Ist die {{ product.title | remove: " Skins" }}
-{% else %} Sind die {{ product.title | remove: " Skins" | remove:"Case" }} 
+{% if product.title contains "iPhone" or product.title contains "iPad" or product.title contains "MacBook"%} {{ 'products.skin_description.ist_das' | t }} {{ product.title | remove: " Skins"}}
+{% elsif product.title contains "Apple Watch" %} {{ 'products.skin_description.ist_die' | t }} {{ product.title | remove: " Skins" }}
+{% else %} {{ 'products.skin_description.sind_die' | t }} {{ product.title | remove: " Skins" | remove:"Case" }} 
 {% endif %}
-nach der Installation noch mit meinem Zubehör kompatibel?</h3>
-<p>Uns ist kein Zubehör bekannt, das nach Installation des Skins nicht mehr verwendet werden konnte. 
-{% if product.title contains "iPhone" %} Deine Hüllen passen über den Skin und die Wireless Charging Funktion eines iPhones wird nicht beeinträchtigt.</p>
-{% elsif product.title contains "iPad" %}  Deine Hüllen passen über den Skin und dein Apple Pencil lädt weiter wie gewohnt an der Seite des iPads.</p>
+<ly-as-73199>nach der Installation noch mit meinem Zubehör kompatibel?</ly-as-73199></h3>
+<p><ly-as-73200>Uns ist kein Zubehör bekannt, das nach Installation des Skins nicht mehr verwendet werden konnte.</ly-as-73200> 
+{% if product.title contains "iPhone" %} <ly-as-73201>Deine Hüllen passen über den Skin und die Wireless Charging Funktion eines iPhones wird nicht beeinträchtigt.</ly-as-73201></p>
+{% elsif product.title contains "iPad" %}  <ly-as-73202>Deine Hüllen passen über den Skin und dein Apple Pencil lädt weiter wie gewohnt an der Seite des iPads.</ly-as-73202></p>
 {% endif %}
-<h3>Ist der Skin rückstandslos entfernbar?</h3>
-<p>Ja, selbstverständlich. Falls du den Skin wieder entfernen willst, kannst du diesen einfach abziehen. In seltenen Fällen bleiben minimale Kleberrückstände zurück, welche jedoch problemlos mit einem Reinigungstuch entfernt werden können.</p>
+<h3><ly-as-73203>Ist der Skin rückstandslos entfernbar?</ly-as-73203></h3>
+<p><ly-as-73204>Ja, selbstverständlich. Falls du den Skin wieder entfernen willst, kannst du diesen einfach abziehen. In seltenen Fällen bleiben minimale Kleberrückstände zurück, welche jedoch problemlos mit einem Reinigungstuch entfernt werden können.</ly-as-73204></p>
 {%if product.title contains "iphone" %}
-<h3>Beeinflusst der Skin den Empfang meines iPhones?</h3>
-<p>Nein.</p>
+<h3><ly-as-73205>Beeinflusst der Skin den Empfang meines iPhones?</ly-as-73205></h3>
+<p><ly-as-73206>Nein.</ly-as-73206></p>
 {% endif %}
-<h3>Löst sich der Skin beim Kontakt mit Wasser?</h3>
-<p>Nein, bei Regen oder sonstigem Kontakt mit Wasser brauchst du keine Angst zu haben, dass sich der Skin ablöst. Wir empfehlen dir aber, deinem Device zuliebe, jeden Kontakt mit Wasser zu vermeiden.</p>
+<h3><ly-as-73207>Löst sich der Skin beim Kontakt mit Wasser?</ly-as-73207></h3>
+<p><ly-as-73208>Nein, bei Regen oder sonstigem Kontakt mit Wasser brauchst du keine Angst zu haben, dass sich der Skin ablöst. Wir empfehlen dir aber, deinem Device zuliebe, jeden Kontakt mit Wasser zu vermeiden.</ly-as-73208></p>
 </dd>
 </dl>
 {% if product.title contains "iPhone"%}
 <div class="product-description-container mobile"><img src="https://cdn.shopify.com/s/files/1/0031/3252/2611/files/mobile_slideshow_skin_accessories.jpg?v=1580748398" alt="iPhone_in_water"><br> <img src="https://cdn.shopify.com/s/files/1/0031/3252/2611/files/protection.png?v=1579193381" alt="protection_icon" class="img-product-wide"><br>
-<h6 class="product-description-text">Kratzer, ade.</h6>
-<p class="product-description-text">Unsere Skins schützen sicher vor Kratzern und das sogar besser als deine Hülle.</p>
+<h6 class="product-description-text"><ly-as-73209>Kratzer, ade.</ly-as-73209></h6>
+<p class="product-description-text"><ly-as-73210>Unsere Skins schützen sicher vor Kratzern und das sogar besser als deine Hülle.</ly-as-73210></p>
 <br> <img src="https://cdn.shopify.com/s/files/1/0031/3252/2611/files/mobile_slideshow_skin_accessories--2.jpg?v=1580748400" alt="yellow_iphone_skin" class="img-product-wide"> <img src="https://cdn.shopify.com/s/files/1/0031/3252/2611/files/stars.png?v=1579193377" alt="stars_icon" class="img-product-wide">
-<h6 class="product-description-text">Einzigartige Designs</h6>
-<p class="product-description-text">Du bist was Besonderes, das wissen wir. Unsere Skins geben dir die Möglichkeit, dich durch dein iPhone auszudrücken.</p>
+<h6 class="product-description-text"><ly-as-73211>Einzigartige Designs</ly-as-73211></h6>
+<p class="product-description-text"><ly-as-73212>Du bist was Besonderes, das wissen wir. Unsere Skins geben dir die Möglichkeit, dich durch dein iPhone auszudrücken.</ly-as-73212></p>
 <br> <img src="https://cdn.shopify.com/s/files/1/0031/3252/2611/files/mobile_slideshow_skin_accessories--3.jpg?v=1580748399" alt="black_camo_iphone" class="img-product-wide"> <img src="https://cdn.shopify.com/s/files/1/0031/3252/2611/files/premium_duenn_copy_3.png?v=1579195003" alt="premium_icon" class="img-product-wide">
-<h6 class="product-description-text">Premium Materialien</h6>
-<p class="product-description-text">Jede unserer Folien hat eine eigene, hochwertige Struktur, da wir nur Folien vom Weltmarktführer 3M verwenden. Dadurch sehen sie nicht nur gut aus, sondern auch leicht zu installieren und langlebig.</p>
+<h6 class="product-description-text"><ly-as-73213>Premium Materialien</ly-as-73213></h6>
+<p class="product-description-text"><ly-as-73214>Jede unserer Folien hat eine eigene, hochwertige Struktur, da wir nur Folien vom Weltmarktführer 3M verwenden. Dadurch sehen sie nicht nur gut aus, sondern auch leicht zu installieren und langlebig.</ly-as-73214></p>
 </div>
 <div class="product-description-container white"><img src="https://cdn.shopify.com/s/files/1/0031/3252/2611/files/icons_made_in_germany_Made_in_Germany_Made_in_Germany.png?v=1586598229" alt="made-in-germany-icon">
-<h6 class="product-description-text center">Hergestellt in Deutschland</h6>
-<p class="product-description-text center">Wir versprechen dir höchste Qualität. Alle Skins werden in Deutschland hergestellt. Versand und Support erfolgen direkt aus Frankfurt am Main.</p>
+<h6 class="product-description-text center"><ly-as-73215>Hergestellt in Deutschland</ly-as-73215></h6>
+<p class="product-description-text center"><ly-as-73216>Wir versprechen dir höchste Qualität. Alle Skins werden in Deutschland hergestellt. Versand und Support erfolgen direkt aus Frankfurt am Main.</ly-as-73216></p>
 </div>
 <div class="feature-container product">
 <div class="feature-item product"><img src="https://cdn.shopify.com/s/files/1/0031/3252/2611/files/large_new2-05.png?v=1580750504" alt="protection_icon_large" class="img-product-wide">
 <div class="product-text-box">
-<h6 class="product-description-text">Schützt, wirklich.</h6>
-<p class="product-description-text">Unsere Skins schützen sicher vor Kratzern, und das sogar besser als deine Hülle.</p>
+<h6 class="product-description-text"><ly-as-73217>Schützt, wirklich.</ly-as-73217></h6>
+<p class="product-description-text"><ly-as-73218>Unsere Skins schützen sicher vor Kratzern, und das sogar besser als deine Hülle.</ly-as-73218></p>
 </div>
 </div>
 <div class="feature-item product"><img src="https://cdn.shopify.com/s/files/1/0031/3252/2611/files/mobile_slideshow_skin_accessories.jpg?v=1580748398" alt="iPhone_in_water" class="img-product-wide"></div>
 <div class="feature-item product"><img src="https://cdn.shopify.com/s/files/1/0031/3252/2611/files/sparkls-04.png?v=1579205152" alt="design-icon-large" class="img-product-wide">
 <div class="product-text-box">
-<h6 class="product-description-text">Einzigartige Designs</h6>
-<p class="product-description-text">Du bist was besonderes, das wissen wir. Unsere Skins geben dir die Möglichkeit, dich durch dein iPhone auszudrücken.</p>
+<h6 class="product-description-text"><ly-as-73211>Einzigartige Designs</ly-as-73211></h6>
+<p class="product-description-text"><ly-as-73219>Du bist was besonderes, das wissen wir. Unsere Skins geben dir die Möglichkeit, dich durch dein iPhone auszudrücken.</ly-as-73219></p>
 </div>
 </div>
 <div class="feature-item product"><img src="https://cdn.shopify.com/s/files/1/0031/3252/2611/files/mobile_slideshow_skin_accessories--2.jpg?v=1580748400" alt="yellow_iphone_skin" class="img-product-wide"></div>
 <div class="feature-item product"><img src="https://cdn.shopify.com/s/files/1/0031/3252/2611/files/large-new-06.png?v=1579203357" alt="premium_icon_large" class="img-product-wide">
 <div class="product-text-box">
-<h6 class="product-description-text">Premium Materialien</h6>
-<p class="product-description-text">Jede unserer Folien hat eine eigene, hochwertige Struktur, da wir nur Folien vom Weltmarktführer 3M verwenden. Dadurch sehen sie nicht nur gut aus, sondern auch leicht zu installieren und langlebig.</p>
+<h6 class="product-description-text"><ly-as-73213>Premium Materialien</ly-as-73213></h6>
+<p class="product-description-text"><ly-as-73214>Jede unserer Folien hat eine eigene, hochwertige Struktur, da wir nur Folien vom Weltmarktführer 3M verwenden. Dadurch sehen sie nicht nur gut aus, sondern auch leicht zu installieren und langlebig.</ly-as-73214></p>
 </div>
 </div>
 <div class="feature-item product"><img src="https://cdn.shopify.com/s/files/1/0031/3252/2611/files/mobile_slideshow_skin_accessories--3.jpg?v=1580748399" alt="black_camo_iphone" class="img-product-wide"></div>

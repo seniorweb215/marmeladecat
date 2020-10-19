@@ -1,0 +1,27 @@
+<section class="entdecken-image" data-section-id="{{ section.id }}">
+    <div>
+        <img src="{{section.settings.background_image | img_url : '1600x1200'}}" alt="banner-image">
+    </div>
+</section>
+<style>
+    [data-section-id="{{ section.id }}"] > div {
+        padding: 0;
+    }
+
+    [data-section-id="{{ section.id }}"] img {
+        width: 100%;
+        display: list-item;
+    }
+</style>
+{% schema %}
+{
+    "name": "Page Banner Image",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "background_image",
+            "label": "Background Image"
+        }
+    ]
+}
+{% endschema %}

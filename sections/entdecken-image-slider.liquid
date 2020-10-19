@@ -1,0 +1,88 @@
+<section class="entdecken-image-slider" data-section-id="{{ section.id }}">
+    <div class="container">
+        {{ pages.waehle-dein-geraet.content }}
+    </div>
+</section>
+
+<style>
+    [data-section-id="{{ section.id }}"] {
+        background-color: {{ section.settings.background_color }};
+        margin-top: 20vw;
+        padding-top: calc(40vw - 50px);
+        position: relative;
+    }
+
+    section[data-section-id="{{ section.id }}"]::before {
+        content: "";
+        width: 100%;
+        height: 20vw;
+        background-color: {{ section.settings.background_color }};
+        display: inline;
+        position: absolute;
+        transform: skewY(-11deg);
+        top: -10vw;
+    }
+
+    section[data-section-id="{{ section.id }}"]::after {
+        content: "";
+        width: 100%;
+        height: 20vw;
+        background-color: {{ section.settings.background_color }};
+        display: inline;
+        position: absolute;
+        transform: skewY(-11deg);
+        bottom: -10vw;
+        z-index: -1;
+    }
+
+    [data-section-id="{{ section.id }}"] #box-choose h1 {
+        font-size: 25px;
+        font-weight: 900;
+        margin: 0;
+        letter-spacing: normal;
+    }
+
+    [data-section-id="{{ section.id }}"] #box-choose h2 {
+        font-size: 18px;
+        font-weight: 100;
+        letter-spacing: normal;
+        margin-top: 0;
+    }
+
+    [data-section-id="{{ section.id }}"] #box-choose button {
+        background-color: unset;
+        margin-left: 0;
+    }
+
+    @media(max-width: 991px) {
+        [data-section-id="{{ section.id }}"] #box-choose {
+            padding-top: 20px;
+        }
+    }
+
+    @media(min-width: 992px) {
+        [data-section-id="{{ section.id }}"] {
+            padding-top: 0;
+            margin-top: 10vw;
+        }
+
+        [data-section-id="{{ section.id }}"]::before {
+            height: 10vw !important;
+            transform: skewY(-5deg) !important;
+            top: -5vw !important;
+        }
+    }
+</style>
+
+{% schema %}
+{
+    "name": "Image Slider",
+    "settings": [
+        {
+            "type": "color",
+            "id": "background_color",
+            "label": "Background Color"
+        }
+    ]
+}
+{% endschema %}
